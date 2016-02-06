@@ -291,6 +291,7 @@
 
 		<!-- *** FOOTER ***
 _________________________________________________________ -->
+<<<<<<< HEAD
         <?php include("footer.html"); ?>
     </div>
 	<!-- /#all -->
@@ -299,6 +300,15 @@ _________________________________________________________ -->
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
     </script>
 	<script>
+=======
+        <?php include("footer.php"); ?>
+    </div><!-- /#all -->
+    <!-- #### JAVASCRIPT FILES ### -->
+    <script src=
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script> 
+    <script>
+>>>>>>> e10fcd24794bcfa41bffd027d6ad1760f75619a5
         window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
     </script>
 	<script
