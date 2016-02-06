@@ -49,7 +49,7 @@
 </head>
 <body>
     <div id="all">
-        <?php include("nav.php"); ?>
+        <?php include("view/nav.php"); ?>
 
         <section class="no-mb">
             <!-- *** JUMBOTRON ***
@@ -59,7 +59,7 @@
                 <div class="container">
                     <div class="row mb-small">
                         <div class="col-sm-12 text-center">
-                            <h1>Vanguard is a small but humble company..</h1>
+                            <h1>Vanguard is great</h1>
                             <h2>Last week more than 100 companies signed up to
                             help them in their projects.</h2>
                         </div>
@@ -296,7 +296,7 @@
 
         <!-- *** FOOTER ***
 _________________________________________________________ -->
-        <?php include("footer.php"); ?>
+        <?php include("view/footer.php"); ?>
     </div><!-- /#all -->
     <!-- #### JAVASCRIPT FILES ### -->
     <script src=
