@@ -59,7 +59,7 @@
                 <div class="container">
                     <div class="row mb-small">
                         <div class="col-sm-12 text-center">
-                            <h1>Vanguard is great</h1>
+                            <h1>Vanguard is a small but humble company..</h1>
                             <h2>Last week more than 100 companies signed up to
                             help them in their projects.</h2>
                         </div>
