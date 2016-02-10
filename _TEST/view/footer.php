@@ -48,7 +48,7 @@
                         <div class="item same-height-row clearfix">
                             <div class="image same-height-always">
                                 <a href="#">
-                                    <img class="img-responsive" src="<?php echo $app_path; ?>img/detailsquare.jpg" alt="">
+                                    <img class="img-responsive" src="<?php echo $app_path;?>img/detailsquare.jpg" alt="">
                                 </a>
                             </div>
                             <div class="name same-height-always">
@@ -59,7 +59,7 @@
                         <div class="item same-height-row clearfix">
                             <div class="image same-height-always">
                                 <a href="#">
-                                    <img class="img-responsive" src="<?php echo $app_path; ?>img/detailsquare.jpg" alt="">
+                                    <img class="img-responsive" src="<?php echo $app_path;?>img/detailsquare.jpg" alt="">
                                 </a>
                             </div>
                             <div class="name same-height-always">
@@ -86,7 +86,7 @@
                         <strong>Great Britain</strong>
                     </p>
 
-                    <a href="<?php echo $app_path; ?>contact.php" class="btn btn-small btn-template-main">Go to contact page</a>
+                    <a href="contact.php" class="btn btn-small btn-template-main">Go to contact page</a>
 
                     <hr class="hidden-md hidden-lg hidden-sm">
 
@@ -102,32 +102,32 @@
                     <div class="photostream">
                         <div>
                             <a href="#">
-                                <img src="<?php echo $app_path; ?>img/detailsquare.jpg" class="img-responsive" alt="#">
+                                <img src="<?php echo $app_path;?>img/detailsquare.jpg" class="img-responsive" alt="#">
                             </a>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="<?php echo $app_path; ?>img/detailsquare2.jpg" class="img-responsive" alt="#">
+                                <img src="<?php echo $app_path;?>img/detailsquare2.jpg" class="img-responsive" alt="#">
                             </a>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="<?php echo $app_path; ?>img/detailsquare3.jpg" class="img-responsive" alt="#">
+                                <img src="<?php echo $app_path;?>img/detailsquare3.jpg" class="img-responsive" alt="#">
                             </a>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="<?php echo $app_path; ?>img/detailsquare3.jpg" class="img-responsive" alt="#">
+                                <img src="<?php echo $app_path;?>img/detailsquare3.jpg" class="img-responsive" alt="#">
                             </a>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="<?php echo $app_path; ?>img/detailsquare2.jpg" class="img-responsive" alt="#">
+                                <img src="<?php echo $app_path;?>img/detailsquare2.jpg" class="img-responsive" alt="#">
                             </a>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="<?php echo $app_path; ?>img/detailsquare.jpg" class="img-responsive" alt="#">
+                                <img src="<?php echo $app_path;?>img/detailsquare.jpg" class="img-responsive" alt="#">
                             </a>
                         </div>
                     </div>
@@ -144,17 +144,48 @@
         <!-- *** COPYRIGHT ***
 _________________________________________________________ -->
 
-        <div id="copyright">
-            <div class="container">
-                <div class="col-md-12">
-                    <p class="pull-left">&copy; 2015. Your company / name goes here</p>
-                    <p class="pull-right">Template by <a href="http://bootstrapious.com">Bootstrap 4 Themes</a> with support from <a href="http://kakusei.cz">Designové předměty</a> 
-                        <!-- Not removing these links is part of the licence conditions of the template. Thanks for understanding :) -->
-                    </p>
 
-                </div>
-            </div>
-        </div>
-        <!-- /#copyright -->
+    </div>
+    <!-- /#all -->
+    <!-- #### JAVASCRIPT FILES ### -->
+    <script
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <script src=
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script> 
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <script
+        src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
+    </script>
+    <script src="<?php echo $app_path ?>js/jquery.cookie.js">
+    </script>
+    <script src="<?php echo $app_path ?>js/waypoints.min.js">
+    </script>
+    <script src="<?php echo $app_path ?>js/jquery.counterup.min.js">
+    </script>
+    <script src="<?php echo $app_path ?>js/jquery.parallax-1.1.3.js">
+    </script>
+    <script src="<?php echo $app_path ?>js/front.js">
+    </script>
+    <!-- owl carousel -->
 
-        <!-- *** COPYRIGHT END *** -->
+    <script src="<?php echo $app_path ?>js/owl.carousel.min.js">
+    </script>
+    <?php if($current_page=="contact"){ ?>
+    
+    <!-- gmaps -->
+     
+    <script src=
+    "https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false">
+    </script> 
+    <script src="<?php echo $app_path ?>js/gmaps.js">
+    </script> 
+    <script src="<?php echo $app_path ?>js/gmaps.init.js">
+    </script> <!-- gmaps end -->
+
+    <?php } ?>
+</body>
+</html>

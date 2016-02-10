@@ -109,19 +109,19 @@ _________________________________________________________ -->
                     </div><!--/.navbar-header -->
                     <div class="navbar-collapse collapse" id="navigation">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown  <?php if($currentPage=="home") echo "active";?>">
+                            <li class="dropdown  <?php if($current_page=="home") echo "active";?>">
                                 <a href="<?php echo $app_path; ?>index.php">Home</a>
                             </li>
                             <li class="dropdown  
-                            <?php if($currentPage=="products") echo "active";?>">
+                            <?php if($current_page=="products") echo "active";?>">
                              <a href="<?php echo $app_path; ?>catalog/products.php">Products</a>
                             </li>
                             <li class="dropdown 
-                            <?php if($currentPage=="about") echo "active";?>">
+                            <?php if($current_page=="about") echo "active";?>">
                             <a href="<?php echo $app_path; ?>about.php">About Us</a>
                             </li>
                             <li class="dropdown 
-                            <?php if($currentPage=="contact") echo "active";?>">
+                            <?php if($current_page=="contact") echo "active";?>">
                             <a href="<?php echo $app_path; ?>contact.php">Contact Us</a>
                             </li>
                         </ul>
