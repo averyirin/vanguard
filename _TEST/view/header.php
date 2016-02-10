@@ -78,7 +78,7 @@ _________________________________________________________ -->
                             <a data-target="#login-modal" data-toggle="modal"
                             href="#"><i class="fa fa-sign-in"></i> <span class=
                             "hidden-xs text-uppercase">Sign in</span></a>
-                            <a href="<?php echo $app_path; ?>customer-register.php"><i class=
+                            <a href="<?php echo $app_path; ?>account/customer-register.php"><i class=
                             "fa fa-user"></i> <span class=
                             "hidden-xs text-uppercase">Sign up</span></a>
                         </div>
@@ -153,7 +153,7 @@ _________________________________________________________ -->
                     <h4 class="modal-title" id="Login">Customer login</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="<?php echo $app_path; ?>customer-orders.html" method="post">
+                    <form action="<?php echo $app_path; ?>account/customer-orders.php" method="post">
                         <div class="form-group">
                             <input class="form-control" id="email_modal"
                             placeholder="email" type="text">
@@ -168,7 +168,7 @@ _________________________________________________________ -->
                     </form>
                     <p class="text-center text-muted">Not registered yet?</p>
                     <p class="text-center text-muted"><a href=
-                    "<?php echo $app_path; ?>customer-register.html"><strong>Register now</strong></a>!
+                    "<?php echo $app_path; ?>account/customer-register.php"><strong>Register now</strong></a>!
                     It is easy and done in 1&nbsp;minute and gives you access
                     to special discounts and much more!</p>
                 </div>
