@@ -13,7 +13,7 @@ $app_path="../";
                     <div class="col-md-5">
                         <ul class="breadcrumb">
 
-                            <li><a href="index.html">Home</a>
+                            <li><a href="<?php echo $app_path;?>index.php">Home</a>
                             </li>
                             <li>My orders</li>
                         </ul>
@@ -56,7 +56,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-info">Being prepared</span>
                                             </td>
-                                            <td><a href="customer-order.html" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -65,7 +65,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-info">Being prepared</span>
                                             </td>
-                                            <td><a href="customer-order.html" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -74,7 +74,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-success">Received</span>
                                             </td>
-                                            <td><a href="customer-order.html" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -83,7 +83,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-danger">Cancelled</span>
                                             </td>
-                                            <td><a href="customer-order.html" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -92,7 +92,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-warning">On hold</span>
                                             </td>
-                                            <td><a href="customer-order.html" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -114,32 +114,7 @@ $app_path="../";
                     <div class="col-md-3">
                         <!-- *** CUSTOMER MENU ***
  _________________________________________________________ -->
-                        <div class="panel panel-default sidebar-menu">
-
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Customer section</h3>
-                            </div>
-
-                            <div class="panel-body">
-
-                                <ul class="nav nav-pills nav-stacked">
-                                    <li class="active">
-                                        <a href="customer-orders.html"><i class="fa fa-list"></i> My orders</a>
-                                    </li>
-                                    <li>
-                                        <a href="customer-wishlist.html"><i class="fa fa-heart"></i> My wishlist</a>
-                                    </li>
-                                    <li>
-                                        <a href="customer-account.html"><i class="fa fa-user"></i> My account</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html"><i class="fa fa-sign-out"></i> Logout</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /.col-md-3 -->
+                        <?php include("customer-menu.php");?>
 
                         <!-- *** CUSTOMER MENU END *** -->
                     </div>
@@ -153,25 +128,6 @@ $app_path="../";
             <!-- /.container -->
         </div>
         <!-- /#content -->
-
-
-        <!-- *** GET IT ***
-_________________________________________________________ -->
-
-        <div id="get-it">
-            <div class="container">
-                <div class="col-md-8 col-sm-12">
-                    <h3>Do you want cool website like this one?</h3>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="#" class="btn btn-template-transparent-primary">Buy this template now</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- *** GET IT END *** -->
-
 
         <!-- *** FOOTER *** -->
         <?php include("../view/footer.php"); ?>

@@ -12,7 +12,7 @@ $app_path="../";
                     </div>
                     <div class="col-md-5">
                         <ul class="breadcrumb">
-                            <li><a href="index.html">Home</a>
+                            <li><a href="<?php echo $app_path;?>index.php">Home</a>
                             </li>
                             <li>New account / Sign in</li>
                         </ul>
@@ -32,11 +32,11 @@ $app_path="../";
 
                             <p class="lead">Not our registered customer yet?</p>
                             <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
-                            <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+                            <p class="text-muted">If you have any questions, please feel free to <a href="<?php echo $app_path;?>contact.php">contact us</a>, our customer service center is working for you 24/7.</p>
 
                             <hr>
 
-                            <form action="customer-orders.html" method="post">
+                            <form action="<?php echo $app_path;?>account/customer-orders.php" method="post">
                                 <div class="form-group">
                                     <label for="name-login">Name</label>
                                     <input type="text" class="form-control" id="name-login">
@@ -66,7 +66,7 @@ $app_path="../";
 
                             <hr>
 
-                            <form action="customer-orders.html" method="post">
+                            <form action="<?php echo $app_path;?>account/customer-orders.php" method="post">
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="text" class="form-control" id="email">
@@ -89,24 +89,6 @@ $app_path="../";
             <!-- /.container -->
         </div>
         <!-- /#content -->
-
-
-        <!-- *** GET IT ***
-_________________________________________________________ -->
-
-        <div id="get-it">
-            <div class="container">
-                <div class="col-md-8 col-sm-12">
-                    <h3>Do you want cool website like this one?</h3>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="#" class="btn btn-template-transparent-primary">Buy this template now</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- *** GET IT END *** -->
 
 
         <!-- *** FOOTER *** -->
