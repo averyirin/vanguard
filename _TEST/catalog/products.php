@@ -14,7 +14,7 @@ $app_path="../";
                             <li>
                                 <a href="<?php echo $app_path; ?>index.php">Home</a>
                             </li>
-                            <li>Category full</li>
+                            <li>Catalog</li>
                         </ul>
                     </div>
                 </div>
@@ -22,10 +22,8 @@ $app_path="../";
         </div>
         <div id="content">
             <div class="container">
-                <p class="text-muted lead text-center">In our Ladies department
-                we offer wide selection of the best products we have found and
-                carefully selected worldwide. Pellentesque habitant morbi
-                tristique senectus et netuss.</p>
+                <p class="text-muted lead text-center">In our Internet of Everything department
+                we offer wide selection of the best products we have created and patented.</p>
                 <div class="row products">
                     <div class="col-md-3 col-sm-4">
                         <div class="product">
@@ -35,17 +33,18 @@ $app_path="../";
                                 "<?php echo $app_path;?>img/product1.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
-                                <h3><a href="shop-detail.html">Fur coat with
-                                very but very very long name</a></h3>
+                                <h3><a href="#">Our first sensor</a></h3>
+                                <p class="caption">This sensor is our 1st sensor in
+                                    the ecosystem that we have developed.</p>
                                 <p class="price">$143.00</p>
-                                <p class="buttons"><a class="btn btn-default"
-                                href="shop-detail.html">View detail</a>
+                                <p class="text-center">
                                 <a class="btn btn-template-main" href=
                                 "shop-basket.html"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
                     </div>
+
                     <div class="col-md-3 col-sm-4">
                         <div class="product">
                             <div class="image">
@@ -54,29 +53,18 @@ $app_path="../";
                                 "<?php echo $app_path;?>img/product2.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
-                                <h3><a href="shop-detail.html">White Blouse
-                                Armani</a></h3>
-                                <p class="price"><del>$280</del> $143.00</p>
-                                <p class="buttons"><a class="btn btn-default"
-                                href="shop-detail.html">View detail</a>
+                                <h3><a href="#">Our second sensor</a></h3>
+                                <p class="caption">This sensor is our 2nd sensor in
+                                    the ecosystem that we have developed.</p>
+                                <p class="price">$162.00</p>
+                                <p class="text-center">
                                 <a class="btn btn-template-main" href=
                                 "shop-basket.html"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
-                            <div class="ribbon sale">
-                                <div class="theribbon">
-                                    SALE
-                                </div>
-                                <div class="ribbon-background"></div>
-                            </div><!-- /.ribbon -->
-                            <div class="ribbon new">
-                                <div class="theribbon">
-                                    NEW
-                                </div>
-                                <div class="ribbon-background"></div>
-                            </div><!-- /.ribbon -->
                         </div><!-- /.product -->
                     </div>
+
                     <div class="col-md-3 col-sm-4">
                         <div class="product">
                             <div class="image">
@@ -85,17 +73,18 @@ $app_path="../";
                                 "<?php echo $app_path;?>img/product3.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
-                                <h3><a href="shop-detail.html">Black Blouse
-                                Versace</a></h3>
-                                <p class="price">$143.00</p>
-                                <p class="buttons"><a class="btn btn-default"
-                                href="shop-detail.html">View detail</a>
+                                <h3><a href="#">Our third sensor</a></h3>
+                                <p class="caption">This sensor is our 3rd sensor in
+                                    the ecosystem that we have developed.</p>
+                                <p class="price">$228.00</p>
+                                <p class="text-center">
                                 <a class="btn btn-template-main" href=
                                 "shop-basket.html"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
                     </div>
+
                     <div class="col-md-3 col-sm-4">
                         <div class="product">
                             <div class="image">
@@ -104,116 +93,18 @@ $app_path="../";
                                 "<?php echo $app_path;?>img/product4.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
-                                <h3><a href="shop-detail.html">Black Blouse
-                                Versace</a></h3>
-                                <p class="price">$143.00</p>
-                                <p class="buttons"><a class="btn btn-default"
-                                href="shop-detail.html">View detail</a>
+                                <h3><a href="#">Our fourth sensor</a></h3>
+                                <p class="caption">This sensor is our 4th sensor in
+                                    the ecosystem that we have developed.</p>
+                                <p class="price">$97.00</p>
+                                <p class="text-center">
                                 <a class="btn btn-template-main" href=
                                 "shop-basket.html"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
                     </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="product">
-                            <div class="image">
-                                <a href="shop-detail.html"><img alt="" class=
-                                "img-responsive image1" src=
-                                "<?php echo $app_path;?>img/product3.jpg"></a>
-                            </div><!-- /.image -->
-                            <div class="text">
-                                <h3><a href="shop-detail.html">White Blouse
-                                Armani</a></h3>
-                                <p class="price"><del>$280</del> $143.00</p>
-                                <p class="buttons"><a class="btn btn-default"
-                                href="shop-detail.html">View detail</a>
-                                <a class="btn btn-template-main" href=
-                                "shop-basket.html"><i class=
-                                "fa fa-shopping-cart"></i>Add to cart</a></p>
-                            </div><!-- /.text -->
-                            <div class="ribbon sale">
-                                <div class="theribbon">
-                                    SALE
-                                </div>
-                                <div class="ribbon-background"></div>
-                            </div><!-- /.ribbon -->
-                            <div class="ribbon new">
-                                <div class="theribbon">
-                                    NEW
-                                </div>
-                                <div class="ribbon-background"></div>
-                            </div><!-- /.ribbon -->
-                        </div><!-- /.product -->
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="product">
-                            <div class="image">
-                                <a href="shop-detail.html"><img alt="" class=
-                                "img-responsive image1" src="<?php echo $app_path;?>img/product4.jpg"></a>
-                            </div><!-- /.image -->
-                            <div class="text">
-                                <h3><a href="shop-detail.html">White Blouse
-                                Versace</a></h3>
-                                <p class="price">$143.00</p>
-                                <p class="buttons"><a class="btn btn-default"
-                                href="shop-detail.html">View detail</a>
-                                <a class="btn btn-template-main" href=
-                                "shop-basket.html"><i class=
-                                "fa fa-shopping-cart"></i>Add to cart</a></p>
-                            </div><!-- /.text -->
-                            <div class="ribbon new">
-                                <div class="theribbon">
-                                    NEW
-                                </div>
-                                <div class="ribbon-background"></div>
-                            </div><!-- /.ribbon -->
-                        </div><!-- /.product -->
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="product">
-                            <div class="image">
-                                <a href="shop-detail.html"><img alt="" class=
-                                "img-responsive image1" src=
-                                "<?php echo $app_path;?>img/product2.jpg"></a>
-                            </div><!-- /.image -->
-                            <div class="text">
-                                <h3><a href="shop-detail.html">White Blouse
-                                Versace</a></h3>
-                                <p class="price">$143.00</p>
-                                <p class="buttons"><a class="btn btn-default"
-                                href="shop-detail.html">View detail</a>
-                                <a class="btn btn-template-main" href=
-                                "shop-basket.html"><i class=
-                                "fa fa-shopping-cart"></i>Add to cart</a></p>
-                            </div><!-- /.text -->
-                            <div class="ribbon new">
-                                <div class="theribbon">
-                                    NEW
-                                </div>
-                                <div class="ribbon-background"></div>
-                            </div><!-- /.ribbon -->
-                        </div><!-- /.product -->
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="product">
-                            <div class="image">
-                                <a href="shop-detail.html"><img alt="" class=
-                                "img-responsive image1" src=
-                                "<?php echo $app_path;?>img/product1.jpg"></a>
-                            </div><!-- /.image -->
-                            <div class="text">
-                                <h3><a href="shop-detail.html">Fur
-                                coat</a></h3>
-                                <p class="price">$143.00</p>
-                                <p class="buttons"><a class="btn btn-default"
-                                href="shop-detail.html">View detail</a>
-                                <a class="btn btn-template-main" href=
-                                "shop-basket.html"><i class=
-                                "fa fa-shopping-cart"></i>Add to cart</a></p>
-                            </div><!-- /.text -->
-                        </div><!-- /.product -->
-                    </div><!-- /.col-md-4 -->
+
                 </div><!-- /.products -->
                 <div class="col-sm-12">
                     <div class="banner">
