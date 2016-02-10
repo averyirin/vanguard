@@ -3,6 +3,7 @@ $app_path="../";
 ?>
         <!-- NAVIGATION AND LOGIN MODAL-->
         <?php include("../view/header.php");?>
+
         <div id="heading-breadcrumbs">
             <div class="container">
                 <div class="row">
@@ -39,7 +40,7 @@ $app_path="../";
                                 <p class="price">$143.00</p>
                                 <p class="text-center">
                                 <a class="btn btn-template-main" href=
-                                "shop-basket.html"><i class=
+                                "<?php echo $app_path;?>cart/shop-cart.php"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
@@ -59,7 +60,7 @@ $app_path="../";
                                 <p class="price">$162.00</p>
                                 <p class="text-center">
                                 <a class="btn btn-template-main" href=
-                                "shop-basket.html"><i class=
+                                "<?php echo $app_path;?>cart/shop-cart.php"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
@@ -79,7 +80,7 @@ $app_path="../";
                                 <p class="price">$228.00</p>
                                 <p class="text-center">
                                 <a class="btn btn-template-main" href=
-                                "shop-basket.html"><i class=
+                                "<?php echo $app_path;?>cart/shop-cart.php"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
@@ -99,7 +100,7 @@ $app_path="../";
                                 <p class="price">$97.00</p>
                                 <p class="text-center">
                                 <a class="btn btn-template-main" href=
-                                "shop-basket.html"><i class=
+                                "<?php echo $app_path;?>cart/shop-cart.php"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
