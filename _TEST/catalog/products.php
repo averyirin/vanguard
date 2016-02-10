@@ -1,54 +1,8 @@
-<!DOCTYPE html>
-<?php $currentPage="products";?>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta content="all,follow" name="robots">
-    <meta content="index,follow,snippet,archive" name="googlebot">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Vanguard Sensors</title>
-    <meta content="" name="keywords">
-    <link href=
-    'http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800'
-    rel='stylesheet' type='text/css'><!-- Bootstrap and Font Awesome css -->
-    <link href=
-    "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    rel="stylesheet">
-    <link href=
-    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel=
-    "stylesheet"><!-- Css animations  -->
-    <link href="css/animate.css" rel="stylesheet">
-    <!-- Theme stylesheet, if possible do not edit this stylesheet -->
-    <link href="css/style.default.css" id="theme-stylesheet" rel="stylesheet">
-    <!-- Custom stylesheet - for your changes -->
-    <link href="css/custom.css" rel="stylesheet">
-    <!-- Responsivity for older IE -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-    <!-- Favicon and apple touch icons-->
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="img/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes=
-    "57x57">
-    <link href="img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes=
-    "72x72">
-    <link href="img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes=
-    "76x76">
-    <link href="img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes=
-    "114x114">
-    <link href="img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes=
-    "120x120">
-    <link href="img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes=
-    "144x144">
-    <link href="img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes=
-    "152x152">
-</head>
-<body>
-    <div id="all">
+<?php $currentPage="products";
+$app_path="../";
+?>
         <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("nav.php");?>
+        <?php include("../view/header.php");?>
         <div id="heading-breadcrumbs">
             <div class="container">
                 <div class="row">
@@ -58,7 +12,7 @@
                     <div class="col-md-5">
                         <ul class="breadcrumb">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="<?php echo $app_path; ?>index.php">Home</a>
                             </li>
                             <li>Category full</li>
                         </ul>
@@ -78,7 +32,7 @@
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "img/product1.jpg"></a>
+                                "<?php echo $app_path;?>img/product1.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="shop-detail.html">Fur coat with
@@ -97,7 +51,7 @@
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "img/product2.jpg"></a>
+                                "<?php echo $app_path;?>img/product2.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="shop-detail.html">White Blouse
@@ -128,7 +82,7 @@
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "img/product3.jpg"></a>
+                                "<?php echo $app_path;?>img/product3.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="shop-detail.html">Black Blouse
@@ -147,7 +101,7 @@
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "img/product4.jpg"></a>
+                                "<?php echo $app_path;?>img/product4.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="shop-detail.html">Black Blouse
@@ -166,7 +120,7 @@
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "img/product3.jpg"></a>
+                                "<?php echo $app_path;?>img/product3.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="shop-detail.html">White Blouse
@@ -196,8 +150,7 @@
                         <div class="product">
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
-                                "img-responsive image1" src=
-                                "img/product4.jpg"></a>
+                                "img-responsive image1" src="<?php echo $app_path;?>img/product4.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="shop-detail.html">White Blouse
@@ -222,7 +175,7 @@
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "img/product2.jpg"></a>
+                                "<?php echo $app_path;?>img/product2.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="shop-detail.html">White Blouse
@@ -247,7 +200,7 @@
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "img/product1.jpg"></a>
+                                "<?php echo $app_path;?>img/product1.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="shop-detail.html">Fur
@@ -265,7 +218,7 @@
                 <div class="col-sm-12">
                     <div class="banner">
                         <a href="#"><img alt="" class="img-responsive" src=
-                        "img/banner2.jpg"></a>
+                        "<?php echo $app_path;?>img/banner2.jpg"></a>
                     </div>
                     <div class="pages">
                         <p class="loadMore"><a class="btn btn-template-main"
@@ -300,7 +253,7 @@
         </div><!-- /#content -->
         <!-- *** FOOTER ***
 _________________________________________________________ -->
-        <?php include("footer.html"); ?><!-- *** COPYRIGHT END *** -->
+        <?php include("../view/footer.php"); ?><!-- *** COPYRIGHT END *** -->
     </div><!-- /#all -->
     <!-- #### JAVASCRIPT FILES ### -->
     <script src=

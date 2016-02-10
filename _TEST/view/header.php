@@ -1,4 +1,54 @@
-    <header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="all,follow" name="robots">
+    <meta content="index,follow,snippet,archive" name="googlebot">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Vanguard Sensors</title>
+    <meta content="" name="keywords">
+    <link href=
+    'http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800'
+    rel='stylesheet' type='text/css'><!-- Bootstrap and Font Awesome css -->
+    <link href=
+    "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href=
+    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel=
+    "stylesheet"><!-- Css animations  -->
+    <link href="<?php echo $app_path ?>css/animate.css" rel="stylesheet">
+    <!-- Theme stylesheet, if possible do not edit this stylesheet -->
+    <link href="<?php echo $app_path ?>css/style.default.css" id="theme-stylesheet" rel="stylesheet">
+    <!-- Custom stylesheet - for your changes -->
+    <link href="<?php echo $app_path ?>css/custom.css" rel="stylesheet">
+    <!-- Responsivity for older IE -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- Favicon and apple touch icons-->
+    <link href="<?php echo $app_path ?>img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="<?php echo $app_path ?>img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?php echo $app_path ?>img/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes=
+    "57x57">
+    <link href="<?php echo $app_path ?>img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes=
+    "72x72">
+    <link href="<?php echo $app_path ?>img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes=
+    "76x76">
+    <link href="<?php echo $app_path ?>img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes=
+    "114x114">
+    <link href="<?php echo $app_path ?>img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes=
+    "120x120">
+    <link href="<?php echo $app_path ?>img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes=
+    "144x144">
+    <link href="<?php echo $app_path ?>img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes=
+    "152x152"><!-- owl carousel css -->
+    <link href="<?php echo $app_path ?>css/owl.carousel.css" rel="stylesheet">
+    <link href="<?php echo $app_path ?>css/owl.theme.css" rel="stylesheet">
+</head>
+<body>
+    <div id="all">
+        <header>
         <!-- *** TOP ***
 _________________________________________________________ -->
         <div id="top">
@@ -28,7 +78,7 @@ _________________________________________________________ -->
                             <a data-target="#login-modal" data-toggle="modal"
                             href="#"><i class="fa fa-sign-in"></i> <span class=
                             "hidden-xs text-uppercase">Sign in</span></a>
-                            <a href="customer-register.html"><i class=
+                            <a href="<?php echo $app_path; ?>customer-register.php"><i class=
                             "fa fa-user"></i> <span class=
                             "hidden-xs text-uppercase">Sign up</span></a>
                         </div>
@@ -44,10 +94,10 @@ _________________________________________________________ -->
                 <div class="container">
                     <div class="navbar-header">
                         <a class="navbar-brand home" href=
-                        "index.html"><img alt="Vanguard logo" class=
-                        "hidden-xs hidden-sm" src="img/vanguard-logo.png">
+                        "<?php echo $app_path; ?>index.php"><img alt="Vanguard logo" class=
+                        "hidden-xs hidden-sm" src="<?php echo $app_path; ?>img/vanguard-logo.png">
                         <img alt="Vanguard logo" class="visible-xs visible-sm"
-                        src="img/vanguard-logo-small.png"><span class=
+                        src="<?php echo $app_path; ?>img/vanguard-logo-small.png"><span class=
                         "sr-only">Vanguard - go to homepage</span></a>
                         <div class="navbar-buttons">
                             <button class="navbar-toggle btn-template-main"
@@ -60,19 +110,19 @@ _________________________________________________________ -->
                     <div class="navbar-collapse collapse" id="navigation">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown  <?php if($currentPage=="home") echo "active";?>">
-                                <a href="index.php">Home</a>
+                                <a href="<?php echo $app_path; ?>index.php">Home</a>
                             </li>
                             <li class="dropdown  
                             <?php if($currentPage=="products") echo "active";?>">
-                             <a href="products.php">Products</a>
+                             <a href="<?php echo $app_path; ?>catalog/products.php">Products</a>
                             </li>
                             <li class="dropdown 
                             <?php if($currentPage=="about") echo "active";?>">
-                            <a href="about.php">About Us</a>
+                            <a href="<?php echo $app_path; ?>about.php">About Us</a>
                             </li>
                             <li class="dropdown 
                             <?php if($currentPage=="contact") echo "active";?>">
-                            <a href="contact.php">Contact Us</a>
+                            <a href="<?php echo $app_path; ?>contact.php">Contact Us</a>
                             </li>
                         </ul>
                     </div><!--/.nav-collapse -->
@@ -103,7 +153,7 @@ _________________________________________________________ -->
                     <h4 class="modal-title" id="Login">Customer login</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="customer-orders.html" method="post">
+                    <form action="<?php echo $app_path; ?>customer-orders.html" method="post">
                         <div class="form-group">
                             <input class="form-control" id="email_modal"
                             placeholder="email" type="text">
@@ -118,7 +168,7 @@ _________________________________________________________ -->
                     </form>
                     <p class="text-center text-muted">Not registered yet?</p>
                     <p class="text-center text-muted"><a href=
-                    "customer-register.html"><strong>Register now</strong></a>!
+                    "<?php echo $app_path; ?>customer-register.html"><strong>Register now</strong></a>!
                     It is easy and done in 1&nbsp;minute and gives you access
                     to special discounts and much more!</p>
                 </div>
