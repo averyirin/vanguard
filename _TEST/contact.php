@@ -48,7 +48,7 @@
 <body>
     <div id="all">
         <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("nav.php"); ?>
+        <?php include("view/nav.php"); ?>
         <div id="heading-breadcrumbs">
             <div class="container">
                 <div class="row">
@@ -165,7 +165,7 @@
 
         <!-- *** FOOTER ***
 _________________________________________________________ -->
-        <?php include("footer.html"); ?>
+        <?php include("view/footer.php"); ?>
     </div><!-- /#all -->
     <!-- #### JAVASCRIPT FILES ### -->
     <script src=
