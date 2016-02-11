@@ -1,5 +1,6 @@
 <?php $current_page="about";
-$app_path="";?>
+$app_path="";
+?>
         <!-- NAVIGATION AND LOGIN MODAL-->
         <?php include("view/header.php"); ?>
         

@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+
+    
+    <?php
+    //products include
+    //     ../account/login.php
+    //index include
+    //     account/login.php
+
+     include($app_path."account/login-homepage.php");?>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -56,7 +65,7 @@ _________________________________________________________ -->
                 <div class="row">
                     <div class="col-xs-5 contact">
                         <p class="hidden-sm hidden-xs">Contact us on +1 705 718
-                        4255 or hello@vanguard.com.</p>
+                        4255 or vanguardcleaningsensors@gmail.com.</p>
                         <p class="hidden-md hidden-lg"><a data-animate-hover=
                         "pulse" href="#"><i class="fa fa-phone"></i></a>
                         <a data-animate-hover="pulse" href="#"><i class=
@@ -110,10 +119,15 @@ _________________________________________________________ -->
                     <div class="navbar-collapse collapse" id="navigation">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown  <?php if($current_page=="home") echo "active";?>">
+
+
                                 <a href="<?php echo $app_path; ?>index.php">Home</a>
+
+
                             </li>
                             <li class="dropdown  
                             <?php if($current_page=="products") echo "active";?>">
+
                              <a href="<?php echo $app_path; ?>catalog/products.php">Products</a>
                             </li>
                             <li class="dropdown 
@@ -141,37 +155,4 @@ _________________________________________________________ -->
                 </div>
             </div><!-- /#navbar -->
         </div><!-- *** NAVBAR END *** -->
-    </header><!-- *** LOGIN MODAL ***
-_________________________________________________________ -->
-    <div aria-hidden="true" aria-labelledby="Login" class="modal fade" id=
-    "login-modal" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button aria-hidden="true" class="close" data-dismiss=
-                    "modal" type="button">&times;</button>
-                    <h4 class="modal-title" id="Login">Customer login</h4>
-                </div>
-                <div class="modal-body">
-                    <form action="<?php echo $app_path; ?>account/customer-orders.php" method="post">
-                        <div class="form-group">
-                            <input class="form-control" id="email_modal"
-                            placeholder="email" type="text">
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="password_modal"
-                            placeholder="password" type="password">
-                        </div>
-                        <p class="text-center"><button class=
-                        "btn btn-template-main"><i class="fa fa-sign-in"></i>
-                        Log in</button></p>
-                    </form>
-                    <p class="text-center text-muted">Not registered yet?</p>
-                    <p class="text-center text-muted"><a href=
-                    "<?php echo $app_path; ?>account/customer-register.php"><strong>Register now</strong></a>!
-                    It is easy and done in 1&nbsp;minute and gives you access
-                    to special discounts and much more!</p>
-                </div>
-            </div>
-        </div>
-    </div><!-- *** LOGIN MODAL END *** -->
+    </header>
