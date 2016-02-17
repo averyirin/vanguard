@@ -5,9 +5,8 @@ $current_page="home";
 $app_path="";
 include("view/header.php"); 
 ?>
+            <!-- *** JUMBOTRON *** -->
         <section class="no-mb">
-            <!-- *** JUMBOTRON ***
- _________________________________________________________ -->
             <div class="jumbotron">
                 <div class="dark-mask"></div>
                 <div class="container">
@@ -34,69 +33,10 @@ include("view/header.php");
                         </div>
                     </div>
                 </div>
-            </div><!-- *** JUMBOTRON END *** -->
-        </section>
-        <section class="bar background-gray no-mb padding-big text-center-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="text-uppercase">Everything you need</h2>
-                        <p class="lead mb-small">40+ prepared HTML
-                        templates</p>
-                        <p class="mb-small">We have prepared literally
-                        <strong>everything you would possibly need building
-                        corporate, e-commerce or portfolio website</strong>. If
-                        you still miss something, let us know and we will try
-                        to include it in theme's future updates.</p>
-                        <p><a class="btn btn-template-main" href="#">Read
-                        more</a></p>
-                    </div>
-                    <div class="col-md-6 text-center"><img alt="" class=
-                    "img-responsive" src=
-                    "img/template-easy-customize.png"></div>
-                </div>
             </div>
         </section>
-        <section class="bar no-mb color-white padding-big text-center-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center"><img alt="" class=
-                    "img-responsive" src="img/template-easy-code.png"></div>
-                    <div class="col-md-6">
-                        <h2 class="text-uppercase">Clean, valid and documented
-                        code &amp; support</h2>
-                        <p class="lead mb-small">We made our best to help
-                        you</p>
-                        <p class="mb-small">Everything in this template is
-                        properly named and categorized. In case you don't find
-                        in the documentation answer to your question, our
-                        support is here to help!</p>
-                        <p><a class="btn btn-template-transparent-primary"
-                        href="#">Read more</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="bar background-gray no-mb padding-big text-center-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="text-uppercase">Easy to customize</h2>
-                        <p class="mb-small">We have made this template with
-                        focus on future client customization. You get
-                        <strong>40+ prepared HTML templates</strong>, many
-                        <strong>reusable components</strong> and <strong>LESS
-                        files</strong> for even easier template
-                        customization.</p>
-                        <p><a class="btn btn-template-main" href="#">Read
-                        more</a></p>
-                    </div>
-                    <div class="col-md-6 text-center"><img alt="" class=
-                    "img-responsive" src=
-                    "img/template-easy-customize.png"></div>
-                </div>
-            </div>
-        </section>
+
+        <!-- PACKAGES WE OFFER -->
         <section class="bar background-white no-mb" id="packages">
             <div class="container" data-animate="fadeInUp">
                 <div class="row">
@@ -110,7 +50,7 @@ include("view/header.php");
                         <div class="row packages">
                             <div class="col-md-3">
                                 <div class="package">
-                                    <div class="package-header light-gray">
+                                    <div class="package-header">
                                         <h5>Basic</h5>
                                     </div>
                                     <div class="price">
@@ -132,12 +72,12 @@ include("view/header.php");
                                         <li><i class="fa fa-times"></i>Extended
                                         Security</li>
                                     </ul><a class="btn btn-template-main" href=
-                                    "#">Sign Up</a>
+                                    "account/customer-register.php">Sign Up</a>
                                 </div>
                             </div><!-- / END FIRST PACKAGE -->
                             <div class="col-md-3">
                                 <div class="package">
-                                    <div class="package-header light-gray">
+                                    <div class="package-header">
                                         <h5>Standard</h5>
                                     </div>
                                     <div class="price">
@@ -159,17 +99,13 @@ include("view/header.php");
                                         <li><i class="fa fa-times"></i>Extended
                                         Security</li>
                                     </ul><a class="btn btn-template-main" href=
-                                    "#">Sign Up</a>
+                                    "account/customer-register.php">Sign Up</a>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="best-value">
                                     <div class="package">
                                         <div class="package-header">
                                             <h5>Premium</h5>
-                                            <div class="meta-text">
-                                                Best Value
-                                            </div>
                                         </div>
                                         <div class="price">
                                             <h4><span class=
@@ -191,13 +127,12 @@ include("view/header.php");
                                             "fa fa-times"></i>Extended
                                             Security</li>
                                         </ul><a class="btn btn-template-main"
-                                        href="#">Sign Up</a>
-                                    </div>
+                                        href="account/customer-register.php">Sign Up</a>                                    
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="package">
-                                    <div class="package-header light-gray">
+                                    <div class="package-header">
                                         <h5>Ultimate</h5>
                                     </div>
                                     <div class="price">
@@ -217,32 +152,10 @@ include("view/header.php");
                                         <li><i class="fa fa-times"></i>Extended
                                         Security</li>
                                     </ul><a class="btn btn-template-main" href=
-                                    "#">Sign Up</a>
+                                    "account/customer-register.php">Sign Up</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="bar background-gray no-mb">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="owl-carousel customers">
-                            <li class="item"><img alt="" class="img-responsive"
-                            src="img/customer-1.png"></li>
-                            <li class="item"><img alt="" class="img-responsive"
-                            src="img/customer-2.png"></li>
-                            <li class="item"><img alt="" class="img-responsive"
-                            src="img/customer-3.png"></li>
-                            <li class="item"><img alt="" class="img-responsive"
-                            src="img/customer-4.png"></li>
-                            <li class="item"><img alt="" class="img-responsive"
-                            src="img/customer-5.png"></li>
-                            <li class="item"><img alt="" class="img-responsive"
-                            src="img/customer-6.png"></li>
-                        </ul><!-- /.owl-carousel -->
                     </div>
                 </div>
             </div>

@@ -122,17 +122,15 @@ _________________________________________________________ -->
 
 
                                 <a href="<?php echo $app_path; ?>index.php">Home</a>
-
-
+                           </li>
+                            <li class="dropdown 
+                            <?php if($current_page=="about") echo "active";?>">
+                            <a href="<?php echo $app_path; ?>about.php">About Us</a>
                             </li>
                             <li class="dropdown  
                             <?php if($current_page=="products") echo "active";?>">
 
                              <a href="<?php echo $app_path; ?>catalog/products.php">Products</a>
-                            </li>
-                            <li class="dropdown 
-                            <?php if($current_page=="about") echo "active";?>">
-                            <a href="<?php echo $app_path; ?>about.php">About Us</a>
                             </li>
                             <li class="dropdown 
                             <?php if($current_page=="contact") echo "active";?>">

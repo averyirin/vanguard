@@ -1,35 +1,20 @@
 <footer id="footer">
             <div class="container">
-                <div class="col-md-3 col-sm-6">
+                <!-- About -->
+                
+
+                <div class="col-md-4 col-sm-6">
                     <h4>About us</h4>
 
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-                    <hr>
-
-                    <h4>Join our monthly newsletter</h4>
-
-                    <form>
-                        <div class="input-group">
-
-                            <input type="text" class="form-control">
-
-                            <span class="input-group-btn">
-
-                        <button class="btn btn-default" type="button"><i class="fa fa-send"></i></button>
-
-                    </span>
-
-                        </div>
-                        <!-- /input-group -->
-                    </form>
-
+                    
                     <hr class="hidden-md hidden-lg hidden-sm">
 
                 </div>
                 <!-- /.col-md-3 -->
-
-                <div class="col-md-3 col-sm-6">
+                
+                <div class="col-md-4 col-sm-6">
 
                     <h4>Blog</h4>
 
@@ -37,7 +22,7 @@
                         <div class="item same-height-row clearfix">
                             <div class="image same-height-always">
                                 <a href="#">
-                                    <img class="img-responsive" src="<?php echo $app_path; ?>img/detailsquare.jpg" alt="">
+                                    <img class="img-responsive" src="<?php echo $app_path; ?>img/img-logo.jpg" alt="">
                                 </a>
                             </div>
                             <div class="name same-height-always">
@@ -48,7 +33,7 @@
                         <div class="item same-height-row clearfix">
                             <div class="image same-height-always">
                                 <a href="#">
-                                    <img class="img-responsive" src="<?php echo $app_path;?>img/detailsquare.jpg" alt="">
+                                    <img class="img-responsive" src="<?php echo $app_path;?>img/img-logo.jpg" alt="">
                                 </a>
                             </div>
                             <div class="name same-height-always">
@@ -59,7 +44,7 @@
                         <div class="item same-height-row clearfix">
                             <div class="image same-height-always">
                                 <a href="#">
-                                    <img class="img-responsive" src="<?php echo $app_path;?>img/detailsquare.jpg" alt="">
+                                    <img class="img-responsive" src="<?php echo $app_path;?>img/img-logo.jpg" alt="">
                                 </a>
                             </div>
                             <div class="name same-height-always">
@@ -71,11 +56,13 @@
                     <hr class="hidden-md hidden-lg">
 
                 </div>
-                <!-- /.col-md-3 -->
 
-                <div class="col-md-3 col-sm-6">
+
+                <div class="col-md-4 col-sm-6">
 
                     <h4>Contact</h4>
+                    
+                    <p>Here is how you can contact us at if need be, some text across the screen </p>
 
                     <p><strong>Universal Ltd.</strong>
                         <br>13/25 New Avenue
@@ -91,49 +78,11 @@
                     <hr class="hidden-md hidden-lg hidden-sm">
 
                 </div>
-                <!-- /.col-md-3 -->
 
-
-
-                <div class="col-md-3 col-sm-6">
-
-                    <h4>Photostream</h4>
-
-                    <div class="photostream">
-                        <div>
-                            <a href="#">
-                                <img src="<?php echo $app_path;?>img/detailsquare.jpg" class="img-responsive" alt="#">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="<?php echo $app_path;?>img/detailsquare2.jpg" class="img-responsive" alt="#">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="<?php echo $app_path;?>img/detailsquare3.jpg" class="img-responsive" alt="#">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="<?php echo $app_path;?>img/detailsquare3.jpg" class="img-responsive" alt="#">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="<?php echo $app_path;?>img/detailsquare2.jpg" class="img-responsive" alt="#">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="<?php echo $app_path;?>img/detailsquare.jpg" class="img-responsive" alt="#">
-                            </a>
-                        </div>
-                    </div>
-
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center>© Copyright 2016 Vanguard Sensors</p>
                 </div>
-                <!-- /.col-md-3 -->
             </div>
             <!-- /.container -->
         </footer>
