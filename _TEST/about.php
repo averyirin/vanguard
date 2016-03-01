@@ -49,9 +49,8 @@ $app_path="";
                                     class="img-responsive img-circle center-block" src=
                                     "img/morrice_stand.jpg" width="200px"></a>
                                 </div>
-                                <h3><a href="team=member.html">Han
-                                Solo</a></h3>
-                                <p class="role">Founder</p>
+                                <h3><a href="team=member.html">Irin Avery</a></h3>
+                                <p class="role">Co-Founder</p>
                                 <div class="social">
                                     <a class="external facebook"
                                     data-animate-hover="pulse" href=
@@ -81,8 +80,7 @@ $app_path="";
                                     class="img-responsive img-circle" src=
                                     "img/duo.jpg"></a>
                                 </div>
-                                <h3><a href="team-member.html">Luke
-                                Skywalker</a></h3>
+                                <h3><a href="team-member.html">Dynamic Duo</a></h3>
                                 <p class="role">CTO</p>
                                 <div class="social">
                                     <a class="external facebook"
@@ -113,8 +111,8 @@ $app_path="";
                                     class="img-responsive img-circle center-block" src=
                                     "img/irin_stand.jpg" width="200px"></a>
                                 </div>
-                                <h3><a href="team-member.html">Ruthgar the Carpatrion</a></h3>
-                                <p class="role">Team Leader</p>
+                                <h3><a href="team-member.html">Irin Avery</a></h3>
+                                <p class="role">Co-Founder</p>
                                 <div class="social">
                                     <a class="external facebook"
                                     data-animate-hover="pulse" href=

@@ -1,5 +1,3 @@
-
-    
     <?php
     //products include
     //     ../account/login.php
@@ -19,11 +17,9 @@
     <link href=
     'http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800'
     rel='stylesheet' type='text/css'><!-- Bootstrap and Font Awesome css -->
-    <link href=
-    "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    <link href="<?php echo $app_path ?>css/font-awesome.css"
     rel="stylesheet">
-    <link href=
-    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel=
+    <link href="<?php echo $app_path ?>css/bootstrap.min.css" rel=
     "stylesheet"><!-- Css animations  -->
     <link href="<?php echo $app_path ?>css/animate.css" rel="stylesheet">
     <!-- Theme stylesheet, if possible do not edit this stylesheet -->

@@ -1,3 +1,11 @@
+<?php
+$firstName = filter_input(INPUT_POST, 'firstName');
+$lastName= filter_input(INPUT_POST, 'lastName');
+$email = filter_input(INPUT_POST, 'email',FILTER_VALIDATE_EMAIL);
+$subject= filter_input(INPUT_POST, 'subject');
+$message= filter_input(INPUT_POST, 'message');
+
+?>
 <?php $current_page="contact";
 $app_path="";?>
         <!-- NAVIGATION AND LOGIN MODAL-->
@@ -6,14 +14,15 @@ $app_path="";?>
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <h1>Contact</h1>
+                        <h1>Contact Summary</h1>
                     </div>
                     <div class="col-md-5">
                         <ul class="breadcrumb">
                             <li>
                                 <a href="<?php echo $app_path; ?>index.php">Home</a>
                             </li>
-                            <li>Contact</li>
+                            <li><a href="<?php echo $app_path; ?>contact.php">Contact</a></li>
+                            <li>Contact Summary</li>
                         </ul>
                     </div>
                 </div>
@@ -25,37 +34,34 @@ $app_path="";?>
                     <div class="col-md-8">
                         <section>
                             <div class="heading">
-                                <h2>We are here to help you</h2>
+                                <h2>Thanks for the notice!</h2>
                             </div>
-                            <p class="lead">Are you curious about something? Do
-                            you have some kind of problem with our products? Just want to reach out to us?</p>
-                            <p>Please feel free to contact us, our customer
-                            service center is working for you 24/7.</p>
+                            <p class="lead">Thank you for messaging us about your problem!</p>
                             <div class="heading">
-                                <h3>Contact form</h3>
+                                <h3>Contact Summary</h3>
                             </div>
-                            <form action="contact-summary.php" method="post">
+                            <form action="contact-validation.php" method="post">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for=
                                             "firstname">Firstname</label>
                                             <input class="form-control" id=
-                                            "firstname" name="firstName" type="text">
+                                            "firstname" name="firstName" type="text" value="<?php echo $firstName;?>">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for=
                                             "lastname">Lastname</label>
-                                            <input class="form-control" name="lastName" id=
+                                            <input class="form-control" name="lastName" value="<?php echo $lastName;?>" id=
                                             "lastname" type="text">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input class="form-control" name="email"  id=
+                                            <input class="form-control" name="email" value="<?php echo $email;?>" id=
                                             "email" type="text">
                                         </div>
                                     </div>
@@ -63,7 +69,7 @@ $app_path="";?>
                                         <div class="form-group">
                                             <label for=
                                             "subject">Subject</label>
-                                            <input class="form-control" name="subject"  id=
+                                            <input class="form-control" name="subject" value="<?php echo $subject;?>" id=
                                             "subject" type="text">
                                         </div>
                                     </div>
@@ -71,8 +77,9 @@ $app_path="";?>
                                         <div class="form-group">
                                             <label for=
                                             "message">Message</label> 
-                                            <textarea class="form-control" name="message"  id=
+                                            <textarea class="form-control" name="message" value="<?php echo $message;?>" id=
                                             "message">
+<?php echo $message;?>
 </textarea>
                                         </div>
                                     </div>
