@@ -11,7 +11,7 @@ _________________________________________________________ -->
                     <h4 class="modal-title" id="Login">Customer login</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="<?php echo $app_path;?>account/login-validation.php" method="get">
+                    <form action="<?php echo $app_path;?>account/login-validation.php" method="post">
                         <div class="form-group">
                             <input class="form-control" id="email_modal" name="email"
                             placeholder="email" type="text">

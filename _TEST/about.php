@@ -38,17 +38,19 @@ $app_path="";
                             leo.</p>
                         </div>
                     </div>
+
                     <div class="row">
-                        <div class="col-md-3 col-sm-3">
+                        <div class="col-md-4 col-sm-3">
+
+                             <!-- Morrice -->
                             <div class="team-member" data-animate="fadeInUp">
                                 <div class="image">
                                     <a href="team-member.html"><img alt=""
-                                    class="img-responsive img-circle" src=
-                                    "img/person-1.jpg"></a>
+                                    class="img-responsive img-circle center-block" src=
+                                    "img/morrice_stand.jpg" width="200px"></a>
                                 </div>
-                                <h3><a href="team-member.html">Han
-                                Solo</a></h3>
-                                <p class="role">Founder</p>
+                                <h3><a href="team=member.html">Irin Avery</a></h3>
+                                <p class="role">Co-Founder</p>
                                 <div class="social">
                                     <a class="external facebook"
                                     data-animate-hover="pulse" href=
@@ -67,17 +69,18 @@ $app_path="";
                                     senectus et netus et malesuada fames ac
                                     turpis egestas.</p>
                                 </div>
-                            </div><!-- /.team-member -->
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-3" data-animate="fadeInUp">
+
+                            <!--  DUO -->
+                        <div class="col-md-4 col-sm-3" data-animate="fadeInUp">
                             <div class="team-member">
                                 <div class="image">
                                     <a href="team-member.html"><img alt=""
                                     class="img-responsive img-circle" src=
-                                    "img/person-2.jpg"></a>
+                                    "img/duo.jpg"></a>
                                 </div>
-                                <h3><a href="team-member.html">Luke
-                                Skywalker</a></h3>
+                                <h3><a href="team-member.html">Dynamic Duo</a></h3>
                                 <p class="role">CTO</p>
                                 <div class="social">
                                     <a class="external facebook"
@@ -97,18 +100,19 @@ $app_path="";
                                     senectus et netus et malesuada fames ac
                                     turpis egestas.</p>
                                 </div>
-                            </div><!-- /.team-member -->
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-3" data-animate="fadeInUp">
+
+                        <!-- Irin -->
+                        <div class="col-md-4 col-sm-3" data-animate="fadeInUp">
                             <div class="team-member">
                                 <div class="image">
                                     <a href="team-member.html"><img alt=""
-                                    class="img-responsive img-circle" src=
-                                    "img/person-3.png"></a>
+                                    class="img-responsive img-circle center-block" src=
+                                    "img/irin_stand.jpg" width="200px"></a>
                                 </div>
-                                <h3><a href="team-member.html">Princess
-                                Leia</a></h3>
-                                <p class="role">Team Leader</p>
+                                <h3><a href="team-member.html">Irin Avery</a></h3>
+                                <p class="role">Co-Founder</p>
                                 <div class="social">
                                     <a class="external facebook"
                                     data-animate-hover="pulse" href=
@@ -129,6 +133,8 @@ $app_path="";
                                 </div>
                             </div><!-- /.team-member -->
                         </div>
+                       
+
                         <div class="col-md-3 col-sm-3" data-animate="fadeInUp">
                             <div class="team-member">
                                 <div class="image">
@@ -160,13 +166,16 @@ $app_path="";
                             </div><!-- /.team-member -->
                         </div>
                     </div><!-- /.row -->
+
+
+
                     <div class="row">
                         <div class="col-md-2 col-sm-3">
                             <div class="team-member" data-animate="fadeInDown">
                                 <div class="image">
                                     <a href="team-member.html"><img alt=""
                                     class="img-responsive img-circle" src=
-                                    "img/person-1.jpg"></a>
+                                    "img/duo.jpg" width="200px"></a>
                                 </div>
                                 <h3><a href="team-member.html">Han
                                 Solo</a></h3>
