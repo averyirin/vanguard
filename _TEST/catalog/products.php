@@ -1,7 +1,9 @@
 <?php $current_page="products";
 $app_path="../";
 ?>
-        <!-- NAVIGATION AND LOGIN MODAL-->
+
+
+    <!-- NAVIGATION AND LOGIN MODAL-->
         <?php include("../view/header.php");?>
 
         <div id="heading-breadcrumbs">
