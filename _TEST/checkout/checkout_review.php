@@ -33,9 +33,9 @@ $app_path="../";
                     <div class="col-md-9 clearfix" id="checkout">
 
                         <div class="box">
-                            <form method="post" action="shop-checkout4.php">
+                            <form method="post" action="checkout_review.php">
                                 <ul class="nav nav-pills nav-justified">
-                                    <li><a href="shop-checkout1.php"><i class="fa fa-map-marker"></i><br>Address</a>
+                                    <li><a href="delivery_address.php"><i class="fa fa-map-marker"></i><br>Address</a>
                                     </li>
                                     <li><a href="shop-checkout2.php"><i class="fa fa-truck"></i><br>Delivery Method</a>
                                     </li>
