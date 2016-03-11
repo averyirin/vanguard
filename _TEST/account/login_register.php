@@ -27,9 +27,9 @@ $app_path="../";
 
                 <div class="row">
                     <!-- Include new account form -->
-                    <?php include("new-account.php");?>
+                    <?php include("new_account.php");?>
                     <!-- Include for already existing user login -->
-                    <?php include("existing-account.php");?>
+                    <?php include("existing_login.php");?>
 
                 </div>
                 <!-- /.row -->
