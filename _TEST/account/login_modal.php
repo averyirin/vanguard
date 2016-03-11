@@ -26,7 +26,7 @@ _________________________________________________________ -->
                     </form>
                     <p class="text-center text-muted">Not registered yet?</p>
                     <p class="text-center text-muted"><a href=
-                    "<?php echo $app_path; ?>account/customer-register.php"><strong>Register now</strong></a>!
+                    "<?php echo $app_path; ?>account/login_register.php"><strong>Register now</strong></a>!
                     It is easy and done in 1&nbsp;minute and gives you access
                     to special discounts and much more!</p>
                 </div>

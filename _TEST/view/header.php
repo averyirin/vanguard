@@ -83,7 +83,7 @@ _________________________________________________________ -->
                             <a data-target="#login-modal" data-toggle="modal"
                             href="#"><i class="fa fa-sign-in"></i> <span class=
                             "hidden-xs text-uppercase">Sign in</span></a>
-                            <a href="<?php echo $app_path; ?>account/customer-register.php"><i class=
+                            <a href="<?php echo $app_path; ?>account/new_account.php"><i class=
                             "fa fa-user"></i> <span class=
                             "hidden-xs text-uppercase">Sign up</span></a>
                         </div>
