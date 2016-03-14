@@ -1,10 +1,12 @@
-<?php $current_page="products";
-$app_path="../";
+<?php
+$current_page="products";
+include("util/routing_path.php");
+include("../view/header.php");
 ?>
 
 
     <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("../view/header.php");?>
+        <?php ?>
 
         <div id="heading-breadcrumbs">
             <div class="container">

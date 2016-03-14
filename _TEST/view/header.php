@@ -1,10 +1,14 @@
     <?php
-    //products include
-    //     ../account/login.php
-    //index include
-    //     account/login.php
+    // removed over ridding values
+    $current_page="login_modal.php";
+    $app_path="";
+    ?>
 
-     include($app_path."account/login_modal.php");?>
+
+
+
+
+
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,26 +116,29 @@ _________________________________________________________ -->
                             "fa fa-align-justify"></i></button>
                         </div>
                     </div><!--/.navbar-header -->
+
                     <div class="navbar-collapse collapse" id="navigation">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown  <?php if($current_page=="home") echo "active";?>">
 
-
+                            <li class="dropdown  <?php if($current_page=="home"){ echo "active";}?>">
                                 <a href="<?php echo $app_path; ?>index.php">Home</a>
                            </li>
+
                             <li class="dropdown 
                             <?php if($current_page=="about") echo "active";?>">
                             <a href="<?php echo $app_path; ?>about.php">About Us</a>
                             </li>
+
                             <li class="dropdown  
                             <?php if($current_page=="products") echo "active";?>">
-
                              <a href="<?php echo $app_path; ?>catalog/products.php">Products</a>
                             </li>
+
                             <li class="dropdown 
                             <?php if($current_page=="contact") echo "active";?>">
                             <a href="<?php echo $app_path; ?>contact.php">Contact Us</a>
                             </li>
+
                         </ul>
                     </div><!--/.nav-collapse -->
                     <div class="collapse clearfix" id="search">

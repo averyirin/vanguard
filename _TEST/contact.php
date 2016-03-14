@@ -1,5 +1,6 @@
 <?php $current_page="contact";
 $app_path="";?>
+
         <!-- NAVIGATION AND LOGIN MODAL-->
         <?php include("view/header.php"); ?>
         <div id="heading-breadcrumbs">
