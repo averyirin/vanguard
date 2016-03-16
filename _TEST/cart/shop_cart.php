@@ -1,5 +1,5 @@
 <?php $current_page="cart";
-$app_path="../";
+$home_path="../";
 ?>
 
         <!-- NAVIGATION AND LOGIN MODAL-->
@@ -13,7 +13,7 @@ $app_path="../";
                     </div>
                     <div class="col-md-6">
                         <ul class="breadcrumb">
-                            <li><a href="<?php echo $app_path;?>index.php">Home</a>
+                            <li><a href="<?php echo $home_path;?>index.php">Home</a>
                             </li>
                             <li>Shopping cart</li>
                         </ul>
@@ -36,7 +36,7 @@ $app_path="../";
 
                         <div class="box">
 
-                            <form method="post" action="<?php echo $app_path;?>checkout/shop-checkout1.php">
+                            <form method="post" action="<?php echo $home_path;?>checkout/shop-checkout1.php">
 
                                 <div class="table-responsive">
                                     <table class="table">
@@ -53,7 +53,7 @@ $app_path="../";
                                             <tr>
                                                 <td>
                                                     <a href="#">
-                                                        <img src="<?php echo $app_path;?>img/detailsquare.jpg" alt="White Blouse Armani">
+                                                        <img src="<?php echo $home_path;?>img/detailsquare.jpg" alt="White Blouse Armani">
                                                     </a>
                                                 </td>
                                                 <td><a href="#">White Blouse Armani</a>
@@ -70,7 +70,7 @@ $app_path="../";
                                             <tr>
                                                 <td>
                                                     <a href="#">
-                                                        <img src="<?php echo $app_path;?>img/basketsquare.jpg" alt="Black Blouse Armani">
+                                                        <img src="<?php echo $home_path;?>img/basketsquare.jpg" alt="Black Blouse Armani">
                                                     </a>
                                                 </td>
                                                 <td><a href="#">Black Blouse Armani</a>
@@ -98,10 +98,10 @@ $app_path="../";
 
                                 <div class="box-footer">
                                     <div class="pull-left">
-                                        <a href="<?php echo $app_path;?>catalog/products.php" class="btn btn-default"><i class="fa fa-chevron-left"></i> Continue shopping</a>
+                                        <a href="<?php echo $home_path;?>catalog/products.php" class="btn btn-default"><i class="fa fa-chevron-left"></i> Continue shopping</a>
                                     </div>
                                     <div class="pull-right">
-                                         <a href="<?php echo $app_path;?>cart/shop-cart.php" class="btn btn-default"><i class="fa fa-refresh"></i> Update cart</a>
+                                         <a href="<?php echo $home_path;?>cart/shop-cart.php" class="btn btn-default"><i class="fa fa-refresh"></i> Update cart</a>
                                         
                                         <button type="submit" class="btn btn-template-main">Proceed to checkout <i class="fa fa-chevron-right"></i>
                                         </button>
@@ -123,12 +123,12 @@ $app_path="../";
                             <div class="col-md-3">
                                 <div class="product">
                                     <div class="image">
-                                        <a href="<?php echo $app_path;?>shop-detail.php">
-                                            <img src="<?php echo $app_path;?>img/product2.jpg" alt="" class="img-responsive image1">
+                                        <a href="<?php echo $home_path;?>shop-detail.php">
+                                            <img src="<?php echo $home_path;?>img/product2.jpg" alt="" class="img-responsive image1">
                                         </a>
                                     </div>
                                     <div class="text">
-                                        <h3><a href="<?php echo $app_path;?>shop-detail.php">Fur coat</a></h3>
+                                        <h3><a href="<?php echo $home_path;?>shop-detail.php">Fur coat</a></h3>
                                         <p class="price">$143</p>
 
                                     </div>
@@ -139,12 +139,12 @@ $app_path="../";
                             <div class="col-md-3">
                                 <div class="product">
                                     <div class="image">
-                                        <a href="<?php echo $app_path;?>shop-detail.php">
-                                            <img src="<?php echo $app_path;?>img/product3.jpg" alt="" class="img-responsive image1">
+                                        <a href="<?php echo $home_path;?>shop-detail.php">
+                                            <img src="<?php echo $home_path;?>img/product3.jpg" alt="" class="img-responsive image1">
                                         </a>
                                     </div>
                                     <div class="text">
-                                        <h3><a href="<?php echo $app_path;?>shop-detail.php">Fur coat</a></h3>
+                                        <h3><a href="<?php echo $home_path;?>shop-detail.php">Fur coat</a></h3>
                                         <p class="price">$143</p>
                                     </div>
                                 </div>
@@ -154,12 +154,12 @@ $app_path="../";
                             <div class="col-md-3">
                                 <div class="product">
                                     <div class="image">
-                                        <a href="<?php echo $app_path;?>shop-detail.php">
-                                            <img src="<?php echo $app_path;?>img/product1.jpg" alt="" class="img-responsive image1">
+                                        <a href="<?php echo $home_path;?>shop-detail.php">
+                                            <img src="<?php echo $home_path;?>img/product1.jpg" alt="" class="img-responsive image1">
                                         </a>
                                     </div>
                                     <div class="text">
-                                        <h3><a href="<?php echo $app_path;?>shop-detail.php">Fur coat</a></h3>
+                                        <h3><a href="<?php echo $home_path;?>shop-detail.php">Fur coat</a></h3>
                                         <p class="price">$143</p>
                                     </div>
                                 </div>

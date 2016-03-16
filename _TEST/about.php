@@ -1,5 +1,7 @@
 <?php $current_page="about";
-$app_path="";?>
+
+include("util/routing_path.php");
+?>
 
 
 
@@ -16,7 +18,7 @@ $app_path="";?>
                     <div class="col-md-5">
                         <ul class="breadcrumb">
                             <li>
-                                <a href="<?php echo $app_path; ?>index.php">Home</a>
+                                <a href="<?php echo $home_path; ?>index.php">Home</a>
                             </li>
                             <li>Our team</li>
                         </ul>

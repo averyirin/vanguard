@@ -1,6 +1,6 @@
 <?php
 $current_page="products";
-include("util/routing_path.php");
+include("../util/routing_path.php");
 include("../view/header.php");
 ?>
 
@@ -17,7 +17,7 @@ include("../view/header.php");
                     <div class="col-md-5">
                         <ul class="breadcrumb">
                             <li>
-                                <a href="<?php echo $app_path; ?>index.php">Home</a>
+                                <a href="<?php echo $home_path; ?>index.php">Home</a>
                             </li>
                             <li>Catalog</li>
                         </ul>
@@ -35,7 +35,7 @@ include("../view/header.php");
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "<?php echo $app_path;?>img/product1.jpg"></a>
+                                "<?php echo $home_path;?>img/product1.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="#">Our first sensor</a></h3>
@@ -44,7 +44,7 @@ include("../view/header.php");
                                 <p class="price">$143.00</p>
                                 <p class="text-center">
                                 <a class="btn btn-template-main" href=
-                                "<?php echo $app_path;?>cart/shop-cart.php"><i class=
+                                "<?php echo $home_path;?>cart/shop-cart.php"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
@@ -55,7 +55,7 @@ include("../view/header.php");
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "<?php echo $app_path;?>img/product2.jpg"></a>
+                                "<?php echo $home_path;?>img/product2.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="#">Our second sensor</a></h3>
@@ -64,7 +64,7 @@ include("../view/header.php");
                                 <p class="price">$162.00</p>
                                 <p class="text-center">
                                 <a class="btn btn-template-main" href=
-                                "<?php echo $app_path;?>cart/shop-cart.php"><i class=
+                                "<?php echo $home_path;?>cart/shop-cart.php"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
@@ -75,7 +75,7 @@ include("../view/header.php");
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "<?php echo $app_path;?>img/product3.jpg"></a>
+                                "<?php echo $home_path;?>img/product3.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="#">Our third sensor</a></h3>
@@ -84,7 +84,7 @@ include("../view/header.php");
                                 <p class="price">$228.00</p>
                                 <p class="text-center">
                                 <a class="btn btn-template-main" href=
-                                "<?php echo $app_path;?>cart/shop-cart.php"><i class=
+                                "<?php echo $home_path;?>cart/shop-cart.php"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
@@ -95,7 +95,7 @@ include("../view/header.php");
                             <div class="image">
                                 <a href="shop-detail.html"><img alt="" class=
                                 "img-responsive image1" src=
-                                "<?php echo $app_path;?>img/product4.jpg"></a>
+                                "<?php echo $home_path;?>img/product4.jpg"></a>
                             </div><!-- /.image -->
                             <div class="text">
                                 <h3><a href="#">Our fourth sensor</a></h3>
@@ -104,7 +104,7 @@ include("../view/header.php");
                                 <p class="price">$97.00</p>
                                 <p class="text-center">
                                 <a class="btn btn-template-main" href=
-                                "<?php echo $app_path;?>cart/shop-cart.php"><i class=
+                                "<?php echo $home_path;?>cart/shop-cart.php"><i class=
                                 "fa fa-shopping-cart"></i>Add to cart</a></p>
                             </div><!-- /.text -->
                         </div><!-- /.product -->
@@ -114,7 +114,7 @@ include("../view/header.php");
                 <div class="col-sm-12">
                     <div class="banner">
                         <a href="#"><img alt="" class="img-responsive" src=
-                        "<?php echo $app_path;?>img/banner2.jpg"></a>
+                        "<?php echo $home_path;?>img/banner2.jpg"></a>
                     </div>
                     <div class="pages">
                         <p class="loadMore"><a class="btn btn-template-main"

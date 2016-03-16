@@ -1,5 +1,8 @@
 <?php $current_page="contact";
-$app_path="";?>
+
+include("util/routing_path.php");
+
+?>
 
         <!-- NAVIGATION AND LOGIN MODAL-->
         <?php include("view/header.php"); ?>
@@ -12,7 +15,7 @@ $app_path="";?>
                     <div class="col-md-5">
                         <ul class="breadcrumb">
                             <li>
-                                <a href="<?php echo $app_path; ?>index.php">Home</a>
+                                <a href="<?php echo $home_path; ?>index.php">Home</a>
                             </li>
                             <li>Contact</li>
                         </ul>

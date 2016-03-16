@@ -22,7 +22,7 @@
                         <div class="item same-height-row clearfix">
                             <div class="image same-height-always">
                                 <a href="#">
-                                    <img class="img-responsive" src="<?php echo $app_path; ?>img/img-logo.jpg" alt="">
+                                    <img class="img-responsive" src="<?php echo $home_path; ?>img/img-logo.jpg" alt="">
                                 </a>
                             </div>
                             <div class="name same-height-always">
@@ -33,7 +33,7 @@
                         <div class="item same-height-row clearfix">
                             <div class="image same-height-always">
                                 <a href="#">
-                                    <img class="img-responsive" src="<?php echo $app_path;?>img/img-logo.jpg" alt="">
+                                    <img class="img-responsive" src="<?php echo $home_path;?>img/img-logo.jpg" alt="">
                                 </a>
                             </div>
                             <div class="name same-height-always">
@@ -44,7 +44,7 @@
                         <div class="item same-height-row clearfix">
                             <div class="image same-height-always">
                                 <a href="#">
-                                    <img class="img-responsive" src="<?php echo $app_path;?>img/img-logo.jpg" alt="">
+                                    <img class="img-responsive" src="<?php echo $home_path;?>img/img-logo.jpg" alt="">
                                 </a>
                             </div>
                             <div class="name same-height-always">
@@ -109,19 +109,19 @@ _________________________________________________________ -->
     <script
         src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
     </script>
-    <script src="<?php echo $app_path ?>js/jquery.cookie.js">
+    <script src="<?php echo $home_path ?>js/jquery.cookie.js">
     </script>
-    <script src="<?php echo $app_path ?>js/waypoints.min.js">
+    <script src="<?php echo $home_path ?>js/waypoints.min.js">
     </script>
-    <script src="<?php echo $app_path ?>js/jquery.counterup.min.js">
+    <script src="<?php echo $home_path ?>js/jquery.counterup.min.js">
     </script>
-    <script src="<?php echo $app_path ?>js/jquery.parallax-1.1.3.js">
+    <script src="<?php echo $home_path ?>js/jquery.parallax-1.1.3.js">
     </script>
-    <script src="<?php echo $app_path ?>js/front.js">
+    <script src="<?php echo $home_path ?>js/front.js">
     </script>
     <!-- owl carousel -->
 
-    <script src="<?php echo $app_path ?>js/owl.carousel.min.js">
+    <script src="<?php echo $home_path ?>js/owl.carousel.min.js">
     </script>
     <?php if($current_page=="contact"){ ?>
     
@@ -130,9 +130,9 @@ _________________________________________________________ -->
     <script src=
     "https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false">
     </script> 
-    <script src="<?php echo $app_path ?>js/gmaps.js">
+    <script src="<?php echo $home_path ?>js/gmaps.js">
     </script> 
-    <script src="<?php echo $app_path ?>js/gmaps.init.js">
+    <script src="<?php echo $home_path ?>js/gmaps.init.js">
     </script> <!-- gmaps end -->
 
     <?php } ?>
