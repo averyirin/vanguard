@@ -87,13 +87,13 @@ $app_path="../";
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="firstname">Firstname</label>
-                                            <input type="text" class="form-control" id="firstname">
+                                            <input type="text" class="form-control"  name="fName" id="firstname">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="lastname">Lastname</label>
-                                            <input type="text" class="form-control" id="lastname">
+                                            <input type="text" class="form-control"  name="lName"id="lastname">
                                         </div>
                                     </div>
                                 </div>

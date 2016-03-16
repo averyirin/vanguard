@@ -1,11 +1,7 @@
-    <?php
-    //products include
-    //     ../account/login.php
-    //index include
-    //     account/login.php
-
-     include($app_path."account/login_modal.php");?>
-    <!DOCTYPE html>
+<?php
+echo $home_path." | ";
+echo $home_path."account/login_modal.php";?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -17,39 +13,39 @@
     <link href=
     'http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800'
     rel='stylesheet' type='text/css'><!-- Bootstrap and Font Awesome css -->
-    <link href="<?php echo $app_path ?>css/font-awesome.css"
+    <link href="<?php echo $home_path ?>css/font-awesome.css"
     rel="stylesheet">
-    <link href="<?php echo $app_path ?>css/bootstrap.min.css" rel=
+    <link href="<?php echo $home_path ?>css/bootstrap.min.css" rel=
     "stylesheet"><!-- Css animations  -->
-    <link href="<?php echo $app_path ?>css/animate.css" rel="stylesheet">
+    <link href="<?php echo $home_path ?>css/animate.css" rel="stylesheet">
     <!-- Theme stylesheet, if possible do not edit this stylesheet -->
-    <link href="<?php echo $app_path ?>css/style.default.css" id="theme-stylesheet" rel="stylesheet">
+    <link href="<?php echo $home_path ?>css/style.default.css" id="theme-stylesheet" rel="stylesheet">
     <!-- Custom stylesheet - for your changes -->
-    <link href="<?php echo $app_path ?>css/custom.css" rel="stylesheet">
+    <link href="<?php echo $home_path ?>css/custom.css" rel="stylesheet">
     <!-- Responsivity for older IE -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
     <!-- Favicon and apple touch icons-->
-    <link href="<?php echo $app_path ?>img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="<?php echo $app_path ?>img/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="<?php echo $app_path ?>img/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes=
+    <link href="<?php echo $home_path ?>img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="<?php echo $home_path ?>img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?php echo $home_path ?>img/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes=
     "57x57">
-    <link href="<?php echo $app_path ?>img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes=
+    <link href="<?php echo $home_path ?>img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes=
     "72x72">
-    <link href="<?php echo $app_path ?>img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes=
+    <link href="<?php echo $home_path ?>img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes=
     "76x76">
-    <link href="<?php echo $app_path ?>img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes=
+    <link href="<?php echo $home_path ?>img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes=
     "114x114">
-    <link href="<?php echo $app_path ?>img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes=
+    <link href="<?php echo $home_path ?>img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes=
     "120x120">
-    <link href="<?php echo $app_path ?>img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes=
+    <link href="<?php echo $home_path ?>img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes=
     "144x144">
-    <link href="<?php echo $app_path ?>img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes=
+    <link href="<?php echo $home_path ?>img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes=
     "152x152"><!-- owl carousel css -->
-    <link href="<?php echo $app_path ?>css/owl.carousel.css" rel="stylesheet">
-    <link href="<?php echo $app_path ?>css/owl.theme.css" rel="stylesheet">
+    <link href="<?php echo $home_path ?>css/owl.carousel.css" rel="stylesheet">
+    <link href="<?php echo $home_path ?>css/owl.theme.css" rel="stylesheet">
 </head>
 <body>
     <div id="all">
@@ -83,7 +79,7 @@ _________________________________________________________ -->
                             <a data-target="#login-modal" data-toggle="modal"
                             href="#"><i class="fa fa-sign-in"></i> <span class=
                             "hidden-xs text-uppercase">Sign in</span></a>
-                            <a href="<?php echo $app_path; ?>account/customer-register.php"><i class=
+                            <a href="<?php echo $home_path; ?>account/login_register.php"><i class=
                             "fa fa-user"></i> <span class=
                             "hidden-xs text-uppercase">Sign up</span></a>
                         </div>
@@ -99,10 +95,10 @@ _________________________________________________________ -->
                 <div class="container">
                     <div class="navbar-header">
                         <a class="navbar-brand home" href=
-                        "<?php echo $app_path; ?>index.php"><img alt="Vanguard logo" class=
-                        "hidden-xs hidden-sm" src="<?php echo $app_path; ?>img/vanguard-logo.png">
+                        "<?php echo $home_path; ?>index.php"><img alt="Vanguard logo" class=
+                        "hidden-xs hidden-sm" src="<?php echo $home_path; ?>img/vanguard-logo.png">
                         <img alt="Vanguard logo" class="visible-xs visible-sm"
-                        src="<?php echo $app_path; ?>img/vanguard-logo-small.png"><span class=
+                        src="<?php echo $home_path; ?>img/vanguard-logo-small.png"><span class=
                         "sr-only">Vanguard - go to homepage</span></a>
                         <div class="navbar-buttons">
                             <button class="navbar-toggle btn-template-main"
@@ -112,26 +108,29 @@ _________________________________________________________ -->
                             "fa fa-align-justify"></i></button>
                         </div>
                     </div><!--/.navbar-header -->
+
                     <div class="navbar-collapse collapse" id="navigation">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown  <?php if($current_page=="home") echo "active";?>">
 
-
-                                <a href="<?php echo $app_path; ?>index.php">Home</a>
+                            <li class="dropdown  <?php if($current_page=="home"){ echo "active";}?>">
+                                <a href="<?php echo $home_path; ?>index.php">Home</a>
                            </li>
+
                             <li class="dropdown 
                             <?php if($current_page=="about") echo "active";?>">
-                            <a href="<?php echo $app_path; ?>about.php">About Us</a>
+                            <a href="<?php echo $home_path; ?>about.php">About Us</a>
                             </li>
+
                             <li class="dropdown  
                             <?php if($current_page=="products") echo "active";?>">
-
-                             <a href="<?php echo $app_path; ?>catalog/products.php">Products</a>
+                             <a href="<?php echo $home_path; ?>catalog/products.php">Products</a>
                             </li>
+
                             <li class="dropdown 
                             <?php if($current_page=="contact") echo "active";?>">
-                            <a href="<?php echo $app_path; ?>contact.php">Contact Us</a>
+                            <a href="<?php echo $home_path; ?>contact.php">Contact Us</a>
                             </li>
+
                         </ul>
                     </div><!--/.nav-collapse -->
                     <div class="collapse clearfix" id="search">

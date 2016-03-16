@@ -1,5 +1,5 @@
 <?php $current_page="register";
-$app_path="../";
+include("../util/routing_path.php");
 ?>
         <!-- NAVIGATION AND LOGIN MODAL-->
         <?php include("../view/header.php");?>
@@ -12,10 +12,11 @@ $app_path="../";
                     </div>
                     <div class="col-md-5">
                         <ul class="breadcrumb">
-                            <li><a href="<?php echo $app_path;?>index.php">Home</a>
+                            <li><a href="<?php echo $home_path;?>index.php">Home</a>
                             </li>
                             <li>New account / Sign in</li>
                         </ul>
+
 
                     </div>
                 </div>

@@ -8,7 +8,7 @@
 
                             <hr>
 
-                            <form action="<?php echo $app_path;?>account/customer-orders.php" method="post">
+                            <form action="<?php echo $home_path;?>account/customer-orders.php" method="post">
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="text" class="form-control" id="email">

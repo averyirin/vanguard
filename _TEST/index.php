@@ -1,10 +1,12 @@
-  
-
 <?php
 $current_page="home";
-$app_path="";
-include("view/header.php"); 
-?>
+
+include"util/routing_path.php";
+
+include "view/header.php";
+include "account/login_modal.php";
+?>s
+
             <!-- *** JUMBOTRON *** -->
         <section class="no-mb">
             <div class="jumbotron">
