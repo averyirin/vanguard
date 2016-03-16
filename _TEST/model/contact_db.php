@@ -1,3 +1,4 @@
+
 <?php
 function insert_contact($firstName, $lastName, $email, $subject, $message) {
 
