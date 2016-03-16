@@ -4,7 +4,7 @@
     //index include
     //     account/login.php
 
-     include($app_path."account/login-homepage.php");?>
+     include($app_path."account/login_modal.php");?>
     <!DOCTYPE html>
 <html lang="en">
 <head>

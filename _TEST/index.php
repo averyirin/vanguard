@@ -12,7 +12,7 @@ include("view/header.php");
                 <div class="container">
                     <div class="row mb-small">
                         <div class="col-sm-12 text-center">
-                            <h1>Vanguard is great</h1>
+                            <h1>Hello World</h1>
                             <h2>Last week more than 100 companies signed up to
                             help them in their projects.</h2>
                         </div>
@@ -72,7 +72,7 @@ include("view/header.php");
                                         <li><i class="fa fa-times"></i>Extended
                                         Security</li>
                                     </ul><a class="btn btn-template-main" href=
-                                    "account/customer-register.php">Sign Up</a>
+                                    "account/login_register.php">Sign Up</a>
                                 </div>
                             </div><!-- / END FIRST PACKAGE -->
                             <div class="col-md-3">
@@ -99,7 +99,7 @@ include("view/header.php");
                                         <li><i class="fa fa-times"></i>Extended
                                         Security</li>
                                     </ul><a class="btn btn-template-main" href=
-                                    "account/customer-register.php">Sign Up</a>
+                                    "account/login_register.php">Sign Up</a>
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -127,7 +127,7 @@ include("view/header.php");
                                             "fa fa-times"></i>Extended
                                             Security</li>
                                         </ul><a class="btn btn-template-main"
-                                        href="account/customer-register.php">Sign Up</a>                                    
+                                        href="account/login_register.php">Sign Up</a>
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -152,7 +152,7 @@ include("view/header.php");
                                         <li><i class="fa fa-times"></i>Extended
                                         Security</li>
                                     </ul><a class="btn btn-template-main" href=
-                                    "account/customer-register.php">Sign Up</a>
+                                    "account/login_register.php">Sign Up</a>
                                 </div>
                             </div>
                         </div>

@@ -34,7 +34,7 @@ $app_path="../";
 
                     <div class="col-md-9" id="customer-orders">
 
-                        <p class="text-muted lead">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+                        <p class="text-muted lead">If you have any questions, please feel free to <a href="../contact.php">contact us</a>, our customer service center is working for you 24/7.</p>
 
                         <div class="box">
 
@@ -114,7 +114,7 @@ $app_path="../";
                     <div class="col-md-3">
                         <!-- *** CUSTOMER MENU ***
  _________________________________________________________ -->
-                        <?php include("customer-menu.php");?>
+                        <?php include("../view/cust_sidebar.php");?>
 
                         <!-- *** CUSTOMER MENU END *** -->
                     </div>

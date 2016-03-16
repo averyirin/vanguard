@@ -176,7 +176,7 @@ $app_path="../";
                         <!-- *** CUSTOMER MENU ***
  _________________________________________________________ -->
 
-                        <?php include("customer-menu.php");?>
+                        <?php include("../view/cust_sidebar.php");?>
 
                         <!-- *** CUSTOMER MENU END *** -->
                     </div>
