@@ -1,14 +1,10 @@
 <?php $current_page="about";
 
 include("util/routing_path.php");
+include("view/header.php");
+include "account/login_modal.php";
 ?>
 
-
-
-
-        <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("view/header.php"); ?>
-        
         <div id="heading-breadcrumbs">
             <div class="container">
                 <div class="row">

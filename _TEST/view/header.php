@@ -1,6 +1,4 @@
-<?php
-echo $home_path." | ";
-echo $home_path."account/login_modal.php";?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

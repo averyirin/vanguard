@@ -2,6 +2,7 @@
 $current_page="products";
 include("../util/routing_path.php");
 include("../view/header.php");
+include "../account/login_modal.php";
 ?>
 
 

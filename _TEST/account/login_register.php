@@ -1,8 +1,8 @@
 <?php $current_page="register";
 include("../util/routing_path.php");
+include("../view/header.php");
+include "./login_modal.php";
 ?>
-        <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("../view/header.php");?>
 
         <div id="heading-breadcrumbs">
             <div class="container">
