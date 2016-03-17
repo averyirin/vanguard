@@ -101,13 +101,7 @@ include "./login_modal.php";
                                 <!-- /.row -->
 
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="company">Company</label>
-                                            <input type="text" class="form-control" id="company">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12">
                                         <div class="form-group">
                                             <label for="street">Street</label>
                                             <input type="text" class="form-control" id="street">
@@ -117,25 +111,19 @@ include "./login_modal.php";
                                 <!-- /.row -->
 
                                 <div class="row">
-                                    <div class="col-sm-6 col-md-3">
-                                        <div class="form-group">
-                                            <label for="city">Company</label>
-                                            <input type="text" class="form-control" id="city">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-3">
+                                    <div class="col-sm-6 col-md-4">
                                         <div class="form-group">
                                             <label for="zip">ZIP</label>
                                             <input type="text" class="form-control" id="zip">
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-3">
+                                    <div class="col-sm-6 col-md-4">
                                         <div class="form-group">
                                             <label for="state">State</label>
                                             <select class="form-control" id="state"></select>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-3">
+                                    <div class="col-sm-6 col-md-4">
                                         <div class="form-group">
                                             <label for="country">Country</label>
                                             <select class="form-control" id="country"></select>
