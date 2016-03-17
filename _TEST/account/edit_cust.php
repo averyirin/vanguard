@@ -145,12 +145,20 @@ include "./login_modal.php";
                                     </div>
                                 </div>
 
+
                                 <div class="col-sm-6 col-md-4">
-                                    <div class="form-group">
+                                    <fieldset class="form-group">
                                         <label for="country">Country</label>
-                                        <select class="form-control" name="country" id="country">Canada</select>
-                                    </div>
+                                        <select class="form-control" name="country" id="country">
+                                            <option value="0"></option>
+                                            <option value="CA">Canada</option>
+                                            <option value="US">United States</option>
+                                            <option value="UM">United States Minor Outlying Islands</option>
+                                            <option value="ZW">Zimbabwe</option>
+                                        </select>
+                                    </fieldset>
                                 </div>
+
 
                                 <div class="col-sm-6">
                                     <div class="form-group">
