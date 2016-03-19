@@ -1,4 +1,5 @@
 <?php
+
 //customer login
 function is_valid_customer_login($email, $pw) {
     global $db;
@@ -17,18 +18,22 @@ function is_valid_customer_login($email, $pw) {
 }
 
 //create customer
-function create_customer($name, $email, $password) {
+function create_customer($firstName, $lastName, $street, $postalCode, $province, $phone, $email_account) {
     try{
         global $db;
         // $password = sha1($email . $password);
         $query = '
-        INSERT INTO vanguard_customers (name, email)
-        VALUES (firstName = :firstName,
-            email = :email)';
+        INSERT INTO vanguard_customers (first_name, last_name, street, province, email, postal_code, tel)
+        VALUES (:firstName,:lastName,:street,:province,:email,:postalCode,:tel)';
 
         $statement = $db->prepare($query);
-        $statement->bindValue(':firstName', $name,PDO::PARAM_STR);
-        $statement->bindValue(':email', $email,PDO::PARAM_STR);
+        $statement->bindValue(':firstName', $firstName,PDO::PARAM_STR);
+        $statement->bindValue(':lastName', $lastName,PDO::PARAM_STR);
+        $statement->bindValue(':street', $street,PDO::PARAM_STR);
+        $statement->bindValue(':province', $province,PDO::PARAM_STR);
+        $statement->bindValue(':email', $email_account,PDO::PARAM_STR);
+        $statement->bindValue(':postalCode', $postalCode,PDO::PARAM_STR);
+        $statement->bindValue(':tel', $phone,PDO::PARAM_STR);
         $statement->execute();
         $statement->closeCursor();
         return true;

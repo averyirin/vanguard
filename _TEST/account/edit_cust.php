@@ -10,14 +10,14 @@ include "./login_modal.php";
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1>My account</h1>
+                    <h1>My Account</h1>
                 </div>
                 <div class="col-md-5">
                     <ul class="breadcrumb">
 
-                        <li><a href="<?php echo $app_path; ?>index.php">Home</a>
+                        <li><a href="<?php echo $home_path; ?>index.php">Home</a>
                         </li>
-                        <li>My account</li>
+                        <li>My account123</li>
                     </ul>
                 </div>
             </div>
@@ -86,7 +86,12 @@ include "./login_modal.php";
                             <h3 class="text-uppercase">Personal details</h3>
                         </div>
 
-                        <form><!-- NEED TO INCLUDE ACTION -->
+                        <form action = "customer_controller.php" method="post"><!-- NEED TO INCLUDE ACTION -->
+                            <!-- first name last name row-->
+                            <input type="hidden" name ="action" value ="edit_info">
+                            <input type="hidden" name ="custID" value ="custID">
+
+
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -114,18 +119,17 @@ include "./login_modal.php";
                             <!-- /.row -->
 
                             <div class="row">
-                                <div class="col-sm-6 col-md-4">
+                                <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="postal code">Postal Code</label>
                                         <input type="text" class="form-control" name="postalCode" id="postalCode">
                                     </div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4">
-                                        <fieldset class="form-group">
-                                            <label for="province">Province</label>
-                                            <select class="form-control" name="country" id="country">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                            <label for="Province">Province</label>
+                                            <select class="form-control" name="province" id="province">
                                                 <option></option>
                                                 <option>Ontario</option>
                                                 <option>British Columbia</option>
@@ -141,25 +145,13 @@ include "./login_modal.php";
                                                 <option>Nunavut</option>
                                                 <option>Saskatchewan</option>
                                             </select>
-                                        </fieldset>
                                     </div>
                                 </div>
 
-
-                                <div class="col-sm-6 col-md-4">
-                                    <fieldset class="form-group">
-                                        <label for="country">Country</label>
-                                        <select class="form-control" name="country" id="country">
-                                            <option value="0"></option>
-                                            <option value="CA">Canada</option>
-                                            <option value="US">United States</option>
-                                            <option value="UM">United States Minor Outlying Islands</option>
-                                            <option value="ZW">Zimbabwe</option>
-                                        </select>
-                                    </fieldset>
                                 </div>
 
-
+                            <!-- Telephone and email-->
+                            <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="phone">Telephone</label>
@@ -172,13 +164,15 @@ include "./login_modal.php";
                                         <input type="text" class="form-control" name="email_account" id="email_account">
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- submit row -->
+                            <div class="row">
                                 <div class="col-sm-12 text-center">
                                     <button type="submit" class="btn btn-template-main"><i class="fa fa-save"></i> Save
                                         changes
                                     </button>
-
                                 </div>
-
                             </div>
 
                         </form>

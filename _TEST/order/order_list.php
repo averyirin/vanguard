@@ -1,5 +1,5 @@
 <?php $current_page="orders";
-$app_path="../";
+$home_path="../";
 ?>
         <!-- NAVIGATION AND LOGIN MODAL-->
         <?php include("../view/header.php");?>
@@ -13,7 +13,7 @@ $app_path="../";
                     <div class="col-md-5">
                         <ul class="breadcrumb">
 
-                            <li><a href="<?php echo $app_path;?>index.php">Home</a>
+                            <li><a href="<?php echo $home_path;?>index.php">Home</a>
                             </li>
                             <li>My orders</li>
                         </ul>
@@ -56,7 +56,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-info">Being prepared</span>
                                             </td>
-                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -65,7 +65,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-info">Being prepared</span>
                                             </td>
-                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -74,7 +74,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-success">Received</span>
                                             </td>
-                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -83,7 +83,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-danger">Cancelled</span>
                                             </td>
-                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -92,7 +92,7 @@ $app_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-warning">On hold</span>
                                             </td>
-                                            <td><a href="<?php echo $app_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                     </tbody>

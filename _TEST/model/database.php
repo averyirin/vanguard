@@ -1,8 +1,8 @@
 <?php
 // Set up the database connection
-$dsn = 'mysql:host=localhost;dbname=vanguard';
-$username = 'root';
-$password = '';
+$dsn = 'mysql:host=sql.computerstudi.es;dbname=gc200260949';
+$username = 'gc200260949';
+$password = 'Zrt3htd?';
 $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
 try {

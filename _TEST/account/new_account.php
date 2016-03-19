@@ -8,23 +8,93 @@
                             <p class="text-muted">If you have any questions, please feel free to <a href="<?php echo $home_path;?>contact.php">contact us</a>, our customer service center is working for you 24/7.</p>
 
                             <hr>
+                            <form action = "customer_controller.php" method="get"><!-- NEED TO INCLUDE ACTION -->
+                                <input type="text" value="register" name="action">
+                                <!-- first name last name row-->
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="firstname">Firstname</label>
+                                            <input type="text" class="form-control" name="fName" id="firstname">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="lastname">Lastname</label>
+                                            <input type="text" class="form-control" name="lName" id="lastname">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
 
-                            <form action="<?php echo $home_path;?>account/customer-orders.php" method="post">
-                                <div class="form-group">
-                                    <label for="name-login">Name</label>
-                                    <input type="text" class="form-control" id="name-login">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="street">Street</label>
+                                            <input type="text" class="form-control" name="street" id="street">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="email-login">Email</label>
-                                    <input type="text" class="form-control" id="email-login">
+                                <!-- /.row -->
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="postal code">Postal Code</label>
+                                            <input type="text" class="form-control" name="postalCode" id="postalCode">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="Province">Province</label>
+                                            <select class="form-control" name="province" id="province">
+                                                <option></option>
+                                                <option>Ontario</option>
+                                                <option>British Columbia</option>
+                                                <option>Quebec</option>
+                                                <option>Yukon</option>
+                                                <option>P/E.I.</option>
+                                                <option>Nova Scotia</option>
+                                                <option>New Brunswick</option>
+                                                <option>Newfoundland and Labrador</option>
+                                                <option>Alberta</option>
+                                                <option>Northwest Territories</option>
+                                                <option>Manitoba</option>
+                                                <option>Nunavut</option>
+                                                <option>Saskatchewan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="form-group">
-                                    <label for="password-login">Password</label>
-                                    <input type="password" class="form-control" id="password-login">
+
+                                <!-- Telephone and email-->
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="phone">Telephone</label>
+                                            <input type="text" class="form-control" name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="email_account">Email</label>
+                                            <input type="text" class="form-control" name="email_account" id="email_account">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-template-main"><i class="fa fa-user-md"></i> Register</button>
+
+                                <!-- submit row -->
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <button type="submit" class="btn btn-template-main"><i class="fa fa-save"></i> Save
+                                            changes
+                                        </button>
+                                    </div>
                                 </div>
+
                             </form>
+
                         </div>
                     </div>
