@@ -1,7 +1,19 @@
 <?php
+//start the cart
+function start_cart_session(){
 
-//create order items
-function create_order_item($name, $email, $password) {
+}
+//clear the cart
+function clear_cart(){
+
+}
+//end the cart
+function end_cart_session(){
+
+}
+
+//create order
+function create_order($name, $email, $password) {
     try{
         global $db;
         // $password = sha1($email . $password);
@@ -24,7 +36,7 @@ function create_order_item($name, $email, $password) {
 }
 
 //list order
-function list_order_items($name, $email, $password) {
+function list_orders($name, $email, $password) {
     try{
         global $db;
         // $password = sha1($email . $password);
@@ -47,7 +59,7 @@ function list_order_items($name, $email, $password) {
 }
 
 //update order
-function update_order_item($name, $email, $password) {
+function update_order($name, $email, $password) {
     try{
         global $db;
         // $password = sha1($email . $password);
@@ -70,7 +82,7 @@ function update_order_item($name, $email, $password) {
 }
 
 //delete order
-function delete_order_item($name, $email, $password) {
+function delete_order($name, $email, $password) {
     try{
         global $db;
         // $password = sha1($email . $password);
@@ -91,4 +103,5 @@ function delete_order_item($name, $email, $password) {
 
     }
 }
+
 ?>
