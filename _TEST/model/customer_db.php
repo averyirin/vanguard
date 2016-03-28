@@ -27,6 +27,7 @@ function is_valid_customer_login($email, $password) {
 function create_customer($firstName, $lastName, $street, $postalCode, $province, $phone, $email_account, $password) {
     try{
         global $db;
+        //comment
         // $password = sha1($email . $password);
         $query = '
         INSERT INTO vanguard_customers (first_name, last_name, street, province, email, postal_code, tel)
