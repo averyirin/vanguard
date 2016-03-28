@@ -8,19 +8,19 @@
                             <p class="text-muted">If you have any questions, please feel free to <a href="<?php echo $home_path;?>contact.php">contact us</a>, our customer service center is working for you 24/7.</p>
 
                             <hr>
-                            <form action = "customer_controller.php" method="get"><!-- NEED TO INCLUDE ACTION -->
-                                <input type="text" value="register" name="action">
+                            <form action = "customer_controller.php" method="POST"><!-- NEED TO INCLUDE ACTION -->
+                                <input type="hidden" value="register" name="action">
                                 <!-- first name last name row-->
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="firstname">Firstname</label>
+                                            <label for="fName">Firstname</label>
                                             <input type="text" class="form-control" name="fName" id="firstname">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="lastname">Lastname</label>
+                                            <label for="lName">Lastname</label>
                                             <input type="text" class="form-control" name="lName" id="lastname">
                                         </div>
                                     </div>
@@ -40,14 +40,14 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="postal code">Postal Code</label>
+                                            <label for="postalCode">Postal Code</label>
                                             <input type="text" class="form-control" name="postalCode" id="postalCode">
                                         </div>
                                     </div>
 
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="Province">Province</label>
+                                            <label for="province">Province</label>
                                             <select class="form-control" name="province" id="province">
                                                 <option></option>
                                                 <option>Ontario</option>
@@ -81,6 +81,20 @@
                                         <div class="form-group">
                                             <label for="email_account">Email</label>
                                             <input type="text" class="form-control" name="email_account" id="email_account">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="password_1">Password</label>
+                                            <input type="password" name="password" class="form-control" id="password_1">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="password_2">Retype Password</label>
+                                            <input type="password" name="confirm_password" class="form-control" id="password_2">
                                         </div>
                                     </div>
                                 </div>

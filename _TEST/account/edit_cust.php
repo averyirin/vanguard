@@ -45,26 +45,22 @@ include "./login_modal.php";
                             <h3 class="text-uppercase">Change password</h3>
                         </div>
 
-                        <form><!-- WE NEED TO INCLUDE ACTION -->
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="password_old">Old password</label>
-                                        <input type="password" class="form-control" id="password_old">
-                                    </div>
-                                </div>
-                            </div>
+                        <form action = "customer_controller.php" method="post"><!-- WE NEED TO INCLUDE ACTION -->
+                            <input type="hidden" name ="action" value ="edit_pw">
+                            <input type="hidden" name ="custID" value ="3">
+
+
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="password_1">New password</label>
-                                        <input type="password" class="form-control" id="password_1">
+                                        <input type="password" name="password" class="form-control" id="password_1">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="password_2">Retype new password</label>
-                                        <input type="password" class="form-control" id="password_2">
+                                        <input type="password" name="confirm_password" class="form-control" id="password_2">
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +83,6 @@ include "./login_modal.php";
                         </div>
 
                         <form action = "customer_controller.php" method="post"><!-- NEED TO INCLUDE ACTION -->
-                            <!-- first name last name row-->
                             <input type="hidden" name ="action" value ="edit_info">
                             <input type="hidden" name ="custID" value ="custID">
 
