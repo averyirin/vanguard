@@ -17,7 +17,8 @@ else if ($action == "update_quantity"){
 
 }
 //delete
-else if ($action == "delete_item"){
+else if ($action == "remove_item"){
 
 }
+else if ($action == "remove_order")
 ?>
