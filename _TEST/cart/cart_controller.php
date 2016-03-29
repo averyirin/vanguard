@@ -1,26 +1,33 @@
 <?php
+require_once ("../model/cart.php");
+
+require_once ("../model/database.php");
+require_once ("../model/product_db.php");/*
+ * foreach ($arr as $key => $value) {
+    echo "Key: $key; Value: $value<br />\n";
+
+ */
 $action = filter_input(INPUT_POST, 'action');
+$product_id = filter_input(INPUT_POST, 'product_id');
+$quantity = filter_input(INPUT_POST, 'product_id');
 
 //start cart session
 if ($action == "start_cart") {
-    if (!isset($_SESSION['cart'])) {
-        $_SESSION['cart'] = array();
-    }
+    start_cart_session();
 }
 
 //end cart session
 else if($action == "end_cart"){
-    if (isset($_SESSION['cart'])) {
-        unset($_SESSION['cart']);
-    }
+    end_cart_session();
 }
 //view cart
 else if($action == "view_cart") {
-    echo "Include shop_cart.php with queries done";
+    view_cart();
 }
 
 //add product to cart
 else if($action == "add_product") {
+    add_product_to_cart($product_id, $quantity);
     echo "Add product to cart";
 }
 
@@ -38,4 +45,6 @@ else if($action == "update_quantity") {
 else if($action == "empty_cart") {
     echo "Cart is now empty";
 }
+view_cart();
+include ("cart_test.php");
 ?>
