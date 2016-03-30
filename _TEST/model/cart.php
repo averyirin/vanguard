@@ -26,9 +26,9 @@ function add_product_to_cart($product_id, $quantity){
 //view cart
 function view_cart(){
     if (isset($_SESSION['cart'])) {
-        foreach ($_SESSION['cart'] as $product_id => $quantity) {
-            echo "Key: $product_id; Value: $quantity<br />\n";
-        }
+        //foreach ($_SESSION['cart'] as $product_id => $quantity) {
+         //   echo "Key: $product_id; Value: $quantity<br />\n";
+        //}
     }
 }
 
