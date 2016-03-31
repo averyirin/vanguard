@@ -1,106 +1,34 @@
 <?php
 //start the cart
 function start_cart_session(){
-
-}
-//clear the cart
-function clear_cart(){
-
+    if (!isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = array();
+    }
 }
 //end the cart
 function end_cart_session(){
-
-}
-
-//create order
-function create_order($name, $email, $password) {
-    try{
-        global $db;
-        // $password = sha1($email . $password);
-        $query = '
-        INSERT INTO vanguard_order (name, email)
-        VALUES (firstName = :firstName,
-            email = :email)';
-
-        $statement = $db->prepare($query);
-        $statement->bindValue(':firstName', $name,PDO::PARAM_STR);
-        $statement->bindValue(':email', $email,PDO::PARAM_STR);
-        $statement->execute();
-        $statement->closeCursor();
-        return true;
-
-    }catch(Exception $error){
-        return false;
-
+    if (isset($_SESSION['cart'])) {
+        unset($_SESSION['cart']);
     }
 }
-
-//list order
-function list_orders($name, $email, $password) {
-    try{
-        global $db;
-        // $password = sha1($email . $password);
-        $query = '
-        INSERT INTO vanguard_customers (name, email)
-        VALUES (firstName = :firstName,
-            email = :email)';
-
-        $statement = $db->prepare($query);
-        $statement->bindValue(':firstName', $name,PDO::PARAM_STR);
-        $statement->bindValue(':email', $email,PDO::PARAM_STR);
-        $statement->execute();
-        $statement->closeCursor();
-        return true;
-
-    }catch(Exception $error){
-        return false;
-
+//clear the cart
+function clear_cart(){
+    if (isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = array();
     }
 }
-
-//update order
-function update_order($name, $email, $password) {
-    try{
-        global $db;
-        // $password = sha1($email . $password);
-        $query = '
-        INSERT INTO vanguard_customers (name, email)
-        VALUES (firstName = :firstName,
-            email = :email)';
-
-        $statement = $db->prepare($query);
-        $statement->bindValue(':firstName', $name,PDO::PARAM_STR);
-        $statement->bindValue(':email', $email,PDO::PARAM_STR);
-        $statement->execute();
-        $statement->closeCursor();
-        return true;
-
-    }catch(Exception $error){
-        return false;
-
+//add product to the cart
+function add_product_to_cart($product_id, $quantity){
+    if (isset($_SESSION['cart'])) {
+        $_SESSION['cart'][$product_id] = $quantity;
     }
 }
-
-//delete order
-function delete_order($name, $email, $password) {
-    try{
-        global $db;
-        // $password = sha1($email . $password);
-        $query = '
-        INSERT INTO vanguard_customers (name, email)
-        VALUES (firstName = :firstName,
-            email = :email)';
-
-        $statement = $db->prepare($query);
-        $statement->bindValue(':firstName', $name,PDO::PARAM_STR);
-        $statement->bindValue(':email', $email,PDO::PARAM_STR);
-        $statement->execute();
-        $statement->closeCursor();
-        return true;
-
-    }catch(Exception $error){
-        return false;
-
+//view cart
+function view_cart(){
+    if (isset($_SESSION['cart'])) {
+        //foreach ($_SESSION['cart'] as $product_id => $quantity) {
+         //   echo "Key: $product_id; Value: $quantity<br />\n";
+        //}
     }
 }
 

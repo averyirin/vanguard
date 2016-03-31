@@ -2,7 +2,6 @@
 include("../util/routing_path.php");
 include("../view/header.php");
 include "./login_modal.php";
-
 ?>
 
 
@@ -38,44 +37,6 @@ include "./login_modal.php";
                     <p class="lead">Change your personal details or your password here.</p>
                     <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
                         turpis egestas.</p>
-
-                    <div class="box">
-
-                        <div class="heading">
-                            <h3 class="text-uppercase">Change password</h3>
-                        </div>
-
-                        <form action = "customer_controller.php" method="post"><!-- WE NEED TO INCLUDE ACTION -->
-                            <input type="hidden" name ="action" value ="edit_pw">
-                            <input type="hidden" name ="custID" value ="3">
-
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="password_1">New password</label>
-                                        <input type="password" name="password" class="form-control" id="password_1">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="password_2">Retype new password</label>
-                                        <input type="password" name="confirm_password" class="form-control" id="password_2">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-template-main"><i class="fa fa-save"></i> Save new
-                                    password
-                                </button>
-                            </div>
-                        </form>
-
-                    </div>
-                    <!-- /.box -->
-
 
                     <div class="box clearfix">
                         <div class="heading">
@@ -123,27 +84,27 @@ include "./login_modal.php";
 
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                            <label for="Province">Province</label>
-                                            <select class="form-control" name="province" id="province">
-                                                <option></option>
-                                                <option>Ontario</option>
-                                                <option>British Columbia</option>
-                                                <option>Quebec</option>
-                                                <option>Yukon</option>
-                                                <option>P/E.I.</option>
-                                                <option>Nova Scotia</option>
-                                                <option>New Brunswick</option>
-                                                <option>Newfoundland and Labrador</option>
-                                                <option>Alberta</option>
-                                                <option>Northwest Territories</option>
-                                                <option>Manitoba</option>
-                                                <option>Nunavut</option>
-                                                <option>Saskatchewan</option>
-                                            </select>
+                                        <label for="Province">Province</label>
+                                        <select class="form-control" name="province" id="province">
+                                            <option></option>
+                                            <option>Ontario</option>
+                                            <option>British Columbia</option>
+                                            <option>Quebec</option>
+                                            <option>Yukon</option>
+                                            <option>P/E.I.</option>
+                                            <option>Nova Scotia</option>
+                                            <option>New Brunswick</option>
+                                            <option>Newfoundland and Labrador</option>
+                                            <option>Alberta</option>
+                                            <option>Northwest Territories</option>
+                                            <option>Manitoba</option>
+                                            <option>Nunavut</option>
+                                            <option>Saskatchewan</option>
+                                        </select>
                                     </div>
                                 </div>
 
-                                </div>
+                            </div>
 
                             <!-- Telephone and email-->
                             <div class="row">
@@ -173,6 +134,44 @@ include "./login_modal.php";
                         </form>
 
                     </div>
+                    <div class="box">
+
+                        <div class="heading">
+                            <h3 class="text-uppercase">Change password</h3>
+                        </div>
+
+                        <form action = "customer_controller.php" method="post"><!-- WE NEED TO INCLUDE ACTION -->
+                            <input type="hidden" name ="action" value ="edit_pw">
+                            <input type="hidden" name ="custID" value ="3">
+
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="password_1">New password</label>
+                                        <input type="password" name="password" class="form-control" id="password_1">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="password_2">Retype new password</label>
+                                        <input type="password" name="confirm_password" class="form-control" id="password_2">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-template-main"><i class="fa fa-save"></i> Save new
+                                    password
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- /.box -->
+
+
 
                 </div>
                 <!-- /.col-md-9 -->

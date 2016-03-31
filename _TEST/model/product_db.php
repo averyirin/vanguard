@@ -22,7 +22,27 @@ function create_product($name, $email, $password) {
 
     }
 }
+function get_product($id){
+    try{
+        global $db;
+        // $password = sha1($email . $password);
+        $query = '
+        SELECT *
+        FROM vanguard_products
+        WHERE (id = :id)';
 
+        $statement = $db->prepare($query);
+        $statement->bindValue(':id', $id,PDO::PARAM_STR);
+        $statement->execute();
+        $result = $statement->fetch();
+        $statement->closeCursor();
+        return $result;
+
+    }catch(Exception $error){
+        return false;
+
+    }
+}
 //list order
 function list_products($name, $email, $password) {
     try{
