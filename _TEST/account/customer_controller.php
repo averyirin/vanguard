@@ -19,6 +19,8 @@ if ($action == "register") {
     if (is_valid_password($password, $confirm_password)) {
         create_customer($firstName, $lastName, $street, $postalCode, $province, $phone, $email_account, $password);
         echo "thank you for registering";
+    }else{
+        echo "Please make sure your password is the same";
     }
 }
 //customer login

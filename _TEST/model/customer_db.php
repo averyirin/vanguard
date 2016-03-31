@@ -1,5 +1,7 @@
 <?php
-//customer login
+//salt
+$salt ="";
+//valid password
 function is_valid_password($password, $confirm)
 {
     $valid = ($password == $confirm);
@@ -28,10 +30,13 @@ function is_valid_customer_login($email, $password)
 //create customer
 function create_customer($firstName, $lastName, $street, $postalCode, $province, $phone, $email_account, $password)
 {
+
     try {
         global $db;
-        //comment
-        // $password = sha1($email . $password);
+        global $salt;
+
+        $newPassword = hash_password($password);
+
         $query = '
         INSERT INTO vanguard_customers
         (first_name, last_name, street, province, email, postal_code, tel)
@@ -58,15 +63,30 @@ function create_customer($firstName, $lastName, $street, $postalCode, $province,
 
         $statement = $db->prepare($query);
         $statement->bindValue(':id', $id, PDO::PARAM_STR);
-        $statement->bindValue(':password', $password, PDO::PARAM_STR);
+        $statement->bindValue(':password',$newPassword, PDO::PARAM_STR);
         $statement->execute();
-        $statement->closeCursor();
+
+        //insert SALT
+        $query = '
+        INSERT INTO vanguard_auth (cust_id, mac_address)
+        VALUES (:id,:mac_address)';
+
+
+        $statement = $db->prepare($query);
+        $statement->bindValue(':id', $id, PDO::PARAM_STR);
+        $statement->bindValue(':mac_address',$salt, PDO::PARAM_STR);
+        $statement->execute();
 
         return true;
 
     } catch (Exception $error) {
+        // $e->getMessage();
         return false;
 
+    } finally{
+        if(isset($statement)){
+            $statement->closeCursor();
+        }
     }
 }
 
@@ -130,4 +150,14 @@ function update_customer_password($id, $password)
     }
 }
 
+
+//hash password
+function hash_password($password){
+    global $salt;
+    define("MAX_LENGTH",6);
+    $intermediateSalt = md5(uniqid(rand(),true));
+    $salt = substr($intermediateSalt,0,MAX_LENGTH);
+    //hashed password
+    return hash("sha256",$password.$salt);
+}
 ?>
