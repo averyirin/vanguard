@@ -1,9 +1,9 @@
 <?php
 //start the cart
+session_start();
 function start_cart_session(){
-    if (!isset($_SESSION['cart'])) {
-        $_SESSION['cart'] = array();
-    }
+    $_SESSION['cart'] = 123;
+
 }
 //end the cart
 function end_cart_session(){
@@ -15,6 +15,12 @@ function end_cart_session(){
 function clear_cart(){
     if (isset($_SESSION['cart'])) {
         $_SESSION['cart'] = array();
+    }
+}
+//add
+function add(){
+    if (isset($_SESSION['cart'])) {
+        $_SESSION['cart']+=1;
     }
 }
 //add product to the cart

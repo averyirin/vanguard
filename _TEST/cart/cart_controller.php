@@ -25,9 +25,14 @@ else if($action == "view_cart") {
     view_cart();
 }
 
+//add
+else if($action == "add") {
+    add();
+}
 //add product to cart
 else if($action == "add_product") {
-    add_product_to_cart($product_id, $quantity);
+    add();
+    //add_product_to_cart($product_id, $quantity);
     echo "Add product to cart";
 }
 
@@ -45,6 +50,4 @@ else if($action == "update_quantity") {
 else if($action == "empty_cart") {
     echo "Cart is now empty";
 }
-view_cart();
-include ("cart_test.php");
 ?>
