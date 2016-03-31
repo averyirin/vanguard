@@ -8,10 +8,24 @@ function is_valid_password($password, $confirm)
     return $valid;
 }
 
+function get_id_from_email($email){
+    global $db;
+    $query = '
+        SELECT id FROM vanguard_customers AS C
+        WHERE C.email = :email';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':email', $email, PDO::PARAM_STR);
+    $statement->execute();
+    $id = $statement->fetchAll();
+    $statement->closeCursor();
+    return $id;
+}
 //customer login
 function is_valid_customer_login($email, $password)
 {
     global $db;
+
+    $loginPassword = hash_login(get_id_from_email($email),$password);
     // $password = sha1($email . $password);
     $query = '
         SELECT * FROM vanguard_customers AS C
@@ -20,7 +34,7 @@ function is_valid_customer_login($email, $password)
         WHERE C.email = :email AND P.password = :password';
     $statement = $db->prepare($query);
     $statement->bindValue(':email', $email, PDO::PARAM_STR);
-    $statement->bindValue(':password', $password, PDO::PARAM_STR);
+    $statement->bindValue(':password', $loginPassword, PDO::PARAM_STR);
     $statement->execute();
     $valid = ($statement->rowCount() == 1);
     $statement->closeCursor();
@@ -150,6 +164,21 @@ function update_customer_password($id, $password)
     }
 }
 
+
+//hash login
+function hash_login($id, $password){
+    global $db;
+    $query = '
+        SELECT mac_address FROM vanguard_auth AS A
+        WHERE A.cust_id = :id';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':id', $id, PDO::PARAM_STR);
+    $statement->execute();
+    $loginSalt = $statement->fetchAll();
+    $statement->closeCursor();
+    //hashed password
+    return hash("sha256",$password.$loginSalt);
+}
 
 //hash password
 function hash_password($password){

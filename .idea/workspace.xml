@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c3e354c-b0e8-400d-bdb4-749d12dd64df" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/IntelliLang.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_windows/git.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_windows/keymap.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_windows/laf.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/baseRefactoring.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/colors.scheme.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/colors/Darcula copy.icls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/colors/Default copy.icls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/debugger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/diff.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file.template.settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ide.general.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/inspection/Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-browsers.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_TEST/cart/cart_controller.php" afterPath="$PROJECT_DIR$/_TEST/cart/cart_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_TEST/cart/cart_test.php" afterPath="$PROJECT_DIR$/_TEST/cart/cart_test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_TEST/model/cart.php" afterPath="$PROJECT_DIR$/_TEST/model/cart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_TEST/model/customer_db.php" afterPath="$PROJECT_DIR$/_TEST/model/customer_db.php" />
     </list>
     <ignored path="conFusion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +28,60 @@
       <file leaf-file-name="customer_controller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_TEST/account/customer_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28992072">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5605889">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer_db.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_TEST/model/customer_db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.833333">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="n#is_valid_password#0;n#!!top" expanded="false" />
+                <marker date="1459467658037" expanded="true" signature="226:295" placeholder="SELECT * FRO... vanguard_customers" />
+                <marker date="1459467658037" expanded="true" signature="734:888" placeholder="SELECT * FRO... vanguard_customers" />
+                <marker date="1459467658037" expanded="true" signature="1454:1639" placeholder="INSERT INTO vanguard_customers... " />
+                <marker date="1459467658037" expanded="true" signature="2335:2410" placeholder="INSERT INTO vanguard_pwd... " />
+                <marker date="1459467658037" expanded="true" signature="2671:2753" placeholder="INSERT INTO vanguard_auth... " />
+                <marker date="1459467658037" expanded="true" signature="3409:3755" placeholder="UPDATE vangu... " />
+                <marker date="1459467658037" expanded="true" signature="4636:4753" placeholder="UPDATE vangu... " />
+                <marker date="1459467658037" expanded="true" signature="5172:5244" placeholder="SELECT mac_a... vanguard_auth" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_TEST/model/cart.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-29.25">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_db.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_TEST/model/contact_db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.75">
+              <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
+              <folding>
+                <marker date="1458165641507" expanded="true" signature="177:412" placeholder="INSERT INTO contact... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_TEST/model/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.5">
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -89,17 +125,17 @@
         <option value="$PROJECT_DIR$/_TEST/account/new_account.php" />
         <option value="$PROJECT_DIR$/_TEST/account/login_modal.php" />
         <option value="$PROJECT_DIR$/_TEST/account/existing_login.php" />
-        <option value="$PROJECT_DIR$/_TEST/model/customer_db.php" />
         <option value="$PROJECT_DIR$/_TEST/catalog/products_controller.php" />
         <option value="$PROJECT_DIR$/_TEST/account/edit_cust.php" />
         <option value="$PROJECT_DIR$/_TEST/catalog/product_controller.php" />
         <option value="$PROJECT_DIR$/_TEST/order/order_controller.php" />
         <option value="$PROJECT_DIR$/_TEST/cart/cart_test.html" />
         <option value="$PROJECT_DIR$/_TEST/model/product_db.php" />
-        <option value="$PROJECT_DIR$/_TEST/account/customer_controller.php" />
         <option value="$PROJECT_DIR$/_TEST/cart/cart_test.php" />
         <option value="$PROJECT_DIR$/_TEST/model/cart.php" />
         <option value="$PROJECT_DIR$/_TEST/cart/cart_controller.php" />
+        <option value="$PROJECT_DIR$/_TEST/account/customer_controller.php" />
+        <option value="$PROJECT_DIR$/_TEST/model/customer_db.php" />
       </list>
     </option>
   </component>
@@ -471,15 +507,28 @@
       <option name="project" value="LOCAL" />
       <updated>1459363673544</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated cart test to increment with session">
+      <created>1459460764680</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1459460764680</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added password hashing">
+      <created>1459466484271</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1459466484271</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25208333" sideWeight="0.49524814" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13229166" sideWeight="0.49524814" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.49375" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30866143" sideWeight="0.50416666" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.49166667" order="8" side_tool="false" content_ui="tabs" />
@@ -487,7 +536,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.49375" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -545,11 +593,13 @@
     <MESSAGE value="Added cart controller actions" />
     <MESSAGE value="Added cart session test" />
     <MESSAGE value="Added functions to the cart model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functions to the cart model" />
+    <MESSAGE value="Updated cart test to increment with session" />
+    <MESSAGE value="added password hashing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added password hashing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -724,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/model/contact_db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_TEST/model/function_test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -773,24 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/model/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_TEST/model/order_db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="91" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/model/customer_db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.166667">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="113" />
         </state>
       </provider>
     </entry>
@@ -871,14 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/model/cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.305555">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_TEST/cart/cart_test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.9444447">
@@ -911,10 +932,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_TEST/model/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.5">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_TEST/model/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.25">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_TEST/model/contact_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.75">
+          <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
+          <folding>
+            <marker date="1458165641507" expanded="true" signature="177:412" placeholder="INSERT INTO contact... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_TEST/model/customer_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.833333">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="n#is_valid_password#0;n#!!top" expanded="false" />
+            <marker date="1459467658037" expanded="true" signature="226:295" placeholder="SELECT * FRO... vanguard_customers" />
+            <marker date="1459467658037" expanded="true" signature="734:888" placeholder="SELECT * FRO... vanguard_customers" />
+            <marker date="1459467658037" expanded="true" signature="1454:1639" placeholder="INSERT INTO vanguard_customers... " />
+            <marker date="1459467658037" expanded="true" signature="2335:2410" placeholder="INSERT INTO vanguard_pwd... " />
+            <marker date="1459467658037" expanded="true" signature="2671:2753" placeholder="INSERT INTO vanguard_auth... " />
+            <marker date="1459467658037" expanded="true" signature="3409:3755" placeholder="UPDATE vangu... " />
+            <marker date="1459467658037" expanded="true" signature="4636:4753" placeholder="UPDATE vangu... " />
+            <marker date="1459467658037" expanded="true" signature="5172:5244" placeholder="SELECT mac_a... vanguard_auth" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_TEST/account/customer_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28992072">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5605889">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding />
         </state>
       </provider>
