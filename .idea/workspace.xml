@@ -25,32 +25,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customer_controller.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="customer_controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_TEST/account/customer_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5605889">
+            <state vertical-scroll-proportion="-13.75">
               <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer_db.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="customer_db.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_TEST/model/customer_db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.833333">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.50169873">
+              <caret line="181" column="59" selection-start-line="181" selection-start-column="59" selection-end-line="181" selection-end-column="59" />
               <folding>
                 <element signature="n#is_valid_password#0;n#!!top" expanded="false" />
-                <marker date="1459467658037" expanded="true" signature="226:295" placeholder="SELECT * FRO... vanguard_customers" />
-                <marker date="1459467658037" expanded="true" signature="734:888" placeholder="SELECT * FRO... vanguard_customers" />
-                <marker date="1459467658037" expanded="true" signature="1454:1639" placeholder="INSERT INTO vanguard_customers... " />
-                <marker date="1459467658037" expanded="true" signature="2335:2410" placeholder="INSERT INTO vanguard_pwd... " />
-                <marker date="1459467658037" expanded="true" signature="2671:2753" placeholder="INSERT INTO vanguard_auth... " />
-                <marker date="1459467658037" expanded="true" signature="3409:3755" placeholder="UPDATE vangu... " />
-                <marker date="1459467658037" expanded="true" signature="4636:4753" placeholder="UPDATE vangu... " />
-                <marker date="1459467658037" expanded="true" signature="5172:5244" placeholder="SELECT mac_a... vanguard_auth" />
+                <marker date="1459469147524" expanded="true" signature="226:294" placeholder="SELECT * FRO... vanguard_customers" />
+                <marker date="1459469147524" expanded="true" signature="887:1041" placeholder="SELECT * FRO... vanguard_customers" />
+                <marker date="1459469147524" expanded="true" signature="1607:1792" placeholder="INSERT INTO vanguard_customers... " />
+                <marker date="1459469147524" expanded="true" signature="2488:2563" placeholder="INSERT INTO vanguard_pwd... " />
+                <marker date="1459469147524" expanded="true" signature="2824:2906" placeholder="INSERT INTO vanguard_auth... " />
+                <marker date="1459469147524" expanded="true" signature="3562:3908" placeholder="UPDATE vangu... " />
+                <marker date="1459469147524" expanded="true" signature="4789:4906" placeholder="UPDATE vangu... " />
+                <marker date="1459469147524" expanded="true" signature="5325:5387" placeholder="SELECT * FRO... vanguard_auth" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_db.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_TEST/model/product_db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.722222">
+              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding>
+                <marker date="1459276958662" expanded="true" signature="179:287" placeholder="INSERT INTO vanguard_order... " />
+                <marker date="1459276958662" expanded="true" signature="746:810" placeholder="SELECT * FRO... vanguard_products" />
+                <marker date="1459276958662" expanded="true" signature="1275:1387" placeholder="INSERT INTO vanguard_customers... " />
+                <marker date="1459276958662" expanded="true" signature="1887:1999" placeholder="INSERT INTO vanguard_customers... " />
+                <marker date="1459276958662" expanded="true" signature="2499:2611" placeholder="INSERT INTO vanguard_customers... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_TEST/catalog/products.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="64.05556">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -519,7 +545,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459466484271</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added password login hash">
+      <created>1459467742099</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1459467742099</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -595,7 +627,8 @@
     <MESSAGE value="Added functions to the cart model" />
     <MESSAGE value="Updated cart test to increment with session" />
     <MESSAGE value="added password hashing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added password hashing" />
+    <MESSAGE value="Added password login hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added password login hash" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -631,6 +664,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding>
+            <marker date="1459276958662" expanded="true" signature="179:287" placeholder="INSERT INTO vanguard_order... " />
+            <marker date="1459276958662" expanded="true" signature="746:810" placeholder="SELECT * FRO... vanguard_products" />
+            <marker date="1459276958662" expanded="true" signature="1275:1387" placeholder="INSERT INTO vanguard_customers... " />
+            <marker date="1459276958662" expanded="true" signature="1887:1999" placeholder="INSERT INTO vanguard_customers... " />
+            <marker date="1459276958662" expanded="true" signature="2499:2611" placeholder="INSERT INTO vanguard_customers... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -865,24 +905,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/catalog/products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030577576">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../book_apps/ch24_guitar_shop/model/cart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/model/product_db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -940,14 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/model/cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.25">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_TEST/model/contact_db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.75">
@@ -958,29 +976,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/model/customer_db.php">
+    <entry file="file://$PROJECT_DIR$/_TEST/account/customer_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.833333">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_TEST/model/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.25">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_TEST/catalog/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="64.05556">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_TEST/model/product_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.722222">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding>
-            <element signature="n#is_valid_password#0;n#!!top" expanded="false" />
-            <marker date="1459467658037" expanded="true" signature="226:295" placeholder="SELECT * FRO... vanguard_customers" />
-            <marker date="1459467658037" expanded="true" signature="734:888" placeholder="SELECT * FRO... vanguard_customers" />
-            <marker date="1459467658037" expanded="true" signature="1454:1639" placeholder="INSERT INTO vanguard_customers... " />
-            <marker date="1459467658037" expanded="true" signature="2335:2410" placeholder="INSERT INTO vanguard_pwd... " />
-            <marker date="1459467658037" expanded="true" signature="2671:2753" placeholder="INSERT INTO vanguard_auth... " />
-            <marker date="1459467658037" expanded="true" signature="3409:3755" placeholder="UPDATE vangu... " />
-            <marker date="1459467658037" expanded="true" signature="4636:4753" placeholder="UPDATE vangu... " />
-            <marker date="1459467658037" expanded="true" signature="5172:5244" placeholder="SELECT mac_a... vanguard_auth" />
+            <marker date="1459276958662" expanded="true" signature="179:287" placeholder="INSERT INTO vanguard_order... " />
+            <marker date="1459276958662" expanded="true" signature="746:810" placeholder="SELECT * FRO... vanguard_products" />
+            <marker date="1459276958662" expanded="true" signature="1275:1387" placeholder="INSERT INTO vanguard_customers... " />
+            <marker date="1459276958662" expanded="true" signature="1887:1999" placeholder="INSERT INTO vanguard_customers... " />
+            <marker date="1459276958662" expanded="true" signature="2499:2611" placeholder="INSERT INTO vanguard_customers... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_TEST/account/customer_controller.php">
+    <entry file="file://$PROJECT_DIR$/_TEST/model/customer_db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5605889">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
+        <state vertical-scroll-proportion="0.50169873">
+          <caret line="181" column="59" selection-start-line="181" selection-start-column="59" selection-end-line="181" selection-end-column="59" />
+          <folding>
+            <element signature="n#is_valid_password#0;n#!!top" expanded="false" />
+            <marker date="1459469147524" expanded="true" signature="226:294" placeholder="SELECT * FRO... vanguard_customers" />
+            <marker date="1459469147524" expanded="true" signature="887:1041" placeholder="SELECT * FRO... vanguard_customers" />
+            <marker date="1459469147524" expanded="true" signature="1607:1792" placeholder="INSERT INTO vanguard_customers... " />
+            <marker date="1459469147524" expanded="true" signature="2488:2563" placeholder="INSERT INTO vanguard_pwd... " />
+            <marker date="1459469147524" expanded="true" signature="2824:2906" placeholder="INSERT INTO vanguard_auth... " />
+            <marker date="1459469147524" expanded="true" signature="3562:3908" placeholder="UPDATE vangu... " />
+            <marker date="1459469147524" expanded="true" signature="4789:4906" placeholder="UPDATE vangu... " />
+            <marker date="1459469147524" expanded="true" signature="5325:5387" placeholder="SELECT * FRO... vanguard_auth" />
+          </folding>
         </state>
       </provider>
     </entry>
