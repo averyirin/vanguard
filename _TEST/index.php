@@ -13,7 +13,7 @@ include "account/login_modal.php";
             <div class="container">
                 <div class="row mb-small">
                     <div class="col-sm-12 text-center">
-                        <h1>Hell0 Fellow Techies and Crazy People</h1>
+                        <h1>Hello Fellow Techies and Crazy People</h1>
                         <h2>Last week Vanguard was pleased to announce the next in a series of high profile builds. Our motto has always been to build big or go home and our 3D
                         laser projector is no exception!!!</h2>
                     </div>
