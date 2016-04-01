@@ -2,7 +2,7 @@
 //start the cart
 session_start();
 function start_cart_session(){
-    $_SESSION['cart'] = 123;
+    $_SESSION['cart'] = array();
 
 }
 //end the cart
@@ -17,12 +17,6 @@ function clear_cart(){
         $_SESSION['cart'] = array();
     }
 }
-//add
-function add(){
-    if (isset($_SESSION['cart'])) {
-        $_SESSION['cart']+=1;
-    }
-}
 //add product to the cart
 function add_product_to_cart($product_id, $quantity){
     if (isset($_SESSION['cart'])) {
@@ -31,11 +25,28 @@ function add_product_to_cart($product_id, $quantity){
 }
 //view cart
 function view_cart(){
+    $grandTotal = 0;
     if (isset($_SESSION['cart'])) {
-        //foreach ($_SESSION['cart'] as $product_id => $quantity) {
-         //   echo "Key: $product_id; Value: $quantity<br />\n";
-        //}
+        echo "<table>";
+        echo "<tr>";
+        echo "<th>Product Name</th>";
+        echo "<th>Quantity</th>";
+        echo "<th>Total</th>";
+        echo "</tr>";
+
+        foreach ($_SESSION['cart'] as $product_id => $quantity) {
+            $product = get_product($product_id);
+            $total=round($product['price']*$quantity,2);
+            $grandTotal += $total;
+            echo "<tr>";
+            echo "<td>".$product['name']."</td>";
+            echo "<td>".$quantity." </td>";
+            echo "<td>".number_format($total,2)."</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
     }
+    echo "<h3>Grand Total: ".number_format($grandTotal,2)."</h3>";
 }
 
 ?>
