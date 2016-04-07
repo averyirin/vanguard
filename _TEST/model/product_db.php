@@ -22,7 +22,7 @@ function create_product($name, $email, $password) {
 
     }
 }
-function get_product($id){
+    function get_product($id){
     try{
         global $db;
         // $password = sha1($email . $password);
