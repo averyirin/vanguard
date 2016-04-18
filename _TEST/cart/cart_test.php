@@ -3,8 +3,8 @@ require_once ("../model/database.php");
 require_once ("../model/cart.php");
 require_once ("../model/product_db.php");
 
-$sensor1 =  get_product(1);
-$sensor2 =  get_product(2);
+$sensors = list_products();
+//start the cart
 session_start();
 
 
@@ -29,23 +29,20 @@ session_start();
 </form>
 
 <h3>Products</h3>
-<?php echo "<p>".$sensor1['name']."<p>";?>
-<form action="cart_controller.php" method="post">
-    <label for="quantity">Quantity</label>
-    <input type="number" name="quantity" value="1">
-    <input type="hidden" name="product_id" value="<?php echo $sensor1['id']; ?>">
-    <input type="hidden" name="action" value="add_product">
-    <input type="submit" value="Add Product">
-</form>
-
-<?php echo "<p>".$sensor2['name']."<p>";?>
-<form action="cart_controller.php" method="post">
-    <label for="quantity">Quantity</label>
-    <input type="number" name="quantity" value="1">
-    <input type="hidden" name="product_id" value="<?php echo $sensor2['id']; ?>">
-    <input type="hidden" name="action" value="add_product">
-    <input type="submit" value="Add Product">
-</form>
+<?php
+foreach($sensors as $sensor){
+?>
+   <h5><?php echo $sensor['name']; ?> </h5>
+    <form action="cart_controller.php" method="post">
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" value="1">
+        <input type="hidden" name="product_id" value="<?php echo $sensor['id']; ?>">
+        <input type="hidden" name="action" value="add_product">
+        <input type="submit" value="Add Product">
+    </form>
+<?php
+}
+?>
 
 
 <h3>Cart Contents</h3>

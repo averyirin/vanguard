@@ -1,9 +1,11 @@
 <?php $current_page="checkout4";
-$app_path="../";
+include("../util/routing_path.php");
+require_once ("../model/database.php");
+include ("../model/product_db.php");
+include("../view/header.php");
+include ("../account/login_modal.php");
 ?>
 
-        <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("../view/header.php");?>
 
 
         <div id="heading-breadcrumbs">

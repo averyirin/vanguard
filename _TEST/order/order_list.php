@@ -1,8 +1,8 @@
 <?php $current_page="orders";
-$home_path="../";
+include("../util/routing_path.php");
+include("../view/header.php");
+include "../account/login_modal.php";
 ?>
-        <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("../view/header.php");?>
 
         <div id="heading-breadcrumbs">
             <div class="container">
@@ -56,7 +56,7 @@ $home_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-info">Being prepared</span>
                                             </td>
-                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>order/order_detail.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -65,7 +65,7 @@ $home_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-info">Being prepared</span>
                                             </td>
-                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>order/order_detail.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -74,7 +74,7 @@ $home_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-success">Received</span>
                                             </td>
-                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>order/order_detail.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -83,7 +83,7 @@ $home_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-danger">Cancelled</span>
                                             </td>
-                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>order/order_detail.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -92,7 +92,7 @@ $home_path="../";
                                             <td>$ 150.00</td>
                                             <td><span class="label label-warning">On hold</span>
                                             </td>
-                                            <td><a href="<?php echo $home_path;?>account/customer-order.php" class="btn btn-template-main btn-sm">View</a>
+                                            <td><a href="<?php echo $home_path;?>order/order_detail.php" class="btn btn-template-main btn-sm">View</a>
                                             </td>
                                         </tr>
                                     </tbody>

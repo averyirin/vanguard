@@ -1,15 +1,17 @@
 <?php $current_page="checkout1";
-$app_path="../";
+include("../util/routing_path.php");
+require_once ("../model/database.php");
+include ("../model/product_db.php");
+include("../view/header.php");
+include ("../account/login_modal.php");
 ?>
 
-        <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("../view/header.php");?>
 
         <div id="heading-breadcrumbs">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <h1>Checkout - Address</h1>
+                        <h1>Checkout - Shipping Address</h1>
                     </div>
                     <div class="col-md-5">
                         <ul class="breadcrumb">
@@ -35,10 +37,6 @@ $app_path="../";
 
                                 <ul class="nav nav-pills nav-justified">
                                     <li class="active"><a href="#"><i class="fa fa-map-marker"></i><br>Address</a>
-                                    </li>
-                                    <li class="disabled"><a href="#"><i class="fa fa-truck"></i><br>Delivery Method</a>
-                                    </li>
-                                    <li class="disabled"><a href="#"><i class="fa fa-money"></i><br>Payment Method</a>
                                     </li>
                                     <li class="disabled"><a href="#"><i class="fa fa-eye"></i><br>Order Review</a>
                                     </li>
@@ -122,10 +120,10 @@ $app_path="../";
 
                                 <div class="box-footer">
                                     <div class="pull-left">
-                                        <a href="<?php echo $app_path;?>cart/shop-cart.php" class="btn btn-default"><i class="fa fa-chevron-left"></i>Back to basket</a>
+                                        <a href="<?php echo $home_path;?>cart/shop_cart.php" class="btn btn-default"><i class="fa fa-chevron-left"></i>Back to cart</a>
                                     </div>
                                     <div class="pull-right">
-                                        <button type="submit" class="btn btn-template-main">Continue to Delivery Method<i class="fa fa-chevron-right"></i>
+                                        <button type="submit" class="btn btn-template-main">Continue to Order Review<i class="fa fa-chevron-right"></i>
                                         </button>
                                     </div>
                                 </div>

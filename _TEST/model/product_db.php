@@ -44,21 +44,18 @@ function create_product($name, $email, $password) {
     }
 }
 //list order
-function list_products($name, $email, $password) {
+function list_products() {
     try{
         global $db;
-        // $password = sha1($email . $password);
         $query = '
-        INSERT INTO vanguard_customers (name, email)
-        VALUES (firstName = :firstName,
-            email = :email)';
+        SELECT *
+        FROM vanguard_products';
 
         $statement = $db->prepare($query);
-        $statement->bindValue(':firstName', $name,PDO::PARAM_STR);
-        $statement->bindValue(':email', $email,PDO::PARAM_STR);
         $statement->execute();
+        $result = $statement->fetchAll();
         $statement->closeCursor();
-        return true;
+        return $result;
 
     }catch(Exception $error){
         return false;

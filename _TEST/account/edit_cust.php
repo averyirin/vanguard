@@ -14,7 +14,7 @@ include "./login_modal.php";
                 <div class="col-md-5">
                     <ul class="breadcrumb">
 
-                        <li><a href="<?php echo $home_path; ?>index.php">Home</a>
+                        <li><a href="index.php">Home</a>
                         </li>
                         <li>My account123</li>
                     </ul>

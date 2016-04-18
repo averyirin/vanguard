@@ -74,12 +74,34 @@ _________________________________________________________ -->
                             "#"><i class="fa fa-envelope"></i></a>
                         </div>
                         <div class="login">
-                            <a data-target="#login-modal" data-toggle="modal"
-                            href="#"><i class="fa fa-sign-in"></i> <span class=
-                            "hidden-xs text-uppercase">Sign in</span></a>
-                            <a href="<?php echo $home_path; ?>account/login_register.php"><i class=
-                            "fa fa-user"></i> <span class=
-                            "hidden-xs text-uppercase">Sign up</span></a>
+                            <?php if(isset($_SESSION['cart'])){ ?>
+
+                                <a href="<?php echo $home_path ?>account/edit_cust.php"><i class="fa fa-user"></i>
+                                    <span class="hidden-xs text-uppercase">Irin Avery</span></a>
+
+                                <a href="<?php echo $home_path ?>order/order_list.php"><i class="fa fa-list"></i>
+                                    <span class="hidden-xs text-uppercase">My Orders</span></a>
+
+
+                                <form class="form-inline" id="account" style="display: inline-block"action='<?php echo $home_path ?>account/customer_controller.php' method='post'>
+                                    <input type='hidden' name='action' value='log_out'>
+                                    <a onclick="account.submit();" style="cursor: pointer">
+                                        <i class="fa fa-sign-out"></i> <span class="hidden-xs text-uppercase">Sign Out
+                                         </span>
+                                    </a>
+                                </form>
+
+
+                            <?php }else{?>
+                                <a data-target="#login-modal" data-toggle="modal"
+                                   href="#"><i class="fa fa-sign-in"></i> <span class=
+                                      "hidden-xs text-uppercase">Sign in</span></a>
+
+                                <a href="<?php echo $home_path ?>account/login_register.php">
+                                    <i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">Sign up
+                             </span></a>
+
+                            <?php }?>
                         </div>
                     </div>
                 </div>
@@ -93,10 +115,10 @@ _________________________________________________________ -->
                 <div class="container">
                     <div class="navbar-header">
                         <a class="navbar-brand home" href=
-                        "<?php echo $home_path; ?>index.php"><img alt="Vanguard logo" class=
-                        "hidden-xs hidden-sm" src="<?php echo $home_path; ?>img/vanguard-logo.png">
+                        "<?php echo $home_path ?>index.php"><img alt="Vanguard logo" class=
+                        "hidden-xs hidden-sm" src="<?php echo $home_path ?>img/vanguard-logo.png">
                         <img alt="Vanguard logo" class="visible-xs visible-sm"
-                        src="<?php echo $home_path; ?>img/vanguard-logo-small.png"><span class=
+                        src="<?php echo $home_path ?>img/vanguard-logo-small.png"><span class=
                         "sr-only">Vanguard - go to homepage</span></a>
                         <div class="navbar-buttons">
                             <button class="navbar-toggle btn-template-main"
@@ -111,22 +133,26 @@ _________________________________________________________ -->
                         <ul class="nav navbar-nav navbar-right">
 
                             <li class="dropdown  <?php if($current_page=="home"){ echo "active";}?>">
-                                <a href="<?php echo $home_path; ?>index.php">Home</a>
+                                <a href="<?php echo $home_path ?>index.php">Home</a>
                            </li>
 
                             <li class="dropdown 
                             <?php if($current_page=="about") echo "active";?>">
-                            <a href="<?php echo $home_path; ?>about.php">About Us</a>
+                            <a href="<?php echo $home_path ?>about.php">About Us</a>
                             </li>
 
                             <li class="dropdown  
                             <?php if($current_page=="products") echo "active";?>">
-                             <a href="<?php echo $home_path; ?>catalog/products.php">Products</a>
+                             <a href="<?php echo $home_path ?>catalog/products.php">Products</a>
                             </li>
 
-                            <li class="dropdown 
+                            <li class="dropdown
+                            <?php if($current_page=="cart") echo "active";?>">
+                                <a href="<?php echo $home_path ?>cart/shop_cart.php">Your Cart</a>
+                            </li>
+                            <li class="dropdown
                             <?php if($current_page=="contact") echo "active";?>">
-                            <a href="<?php echo $home_path; ?>contact.php">Contact Us</a>
+                                <a href="<?php echo $home_path ?>contact.php">Contact Us</a>
                             </li>
 
                         </ul>

@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once ("../model/cart.php");
 
 require_once ("../model/database.php");
@@ -10,6 +11,7 @@ $quantity = filter_input(INPUT_POST, 'quantity');
 
 //start cart session
 if ($action == "start_cart") {
+    //start the cart
     start_cart_session();
     echo "cart started!";
 }
@@ -27,23 +29,29 @@ else if($action == "view_cart") {
 else if($action == "add_product") {
     add_product_to_cart($product_id, $quantity);
     echo "added product to cart!";
+    header("location:./shop_cart.php");
 }
 
 //remove product to cart
 else if($action == "remove_product") {
+    remove_product($product_id);
     echo "Remove product from cart";
+    header("location:./shop_cart.php");
 }
 
 //update product quantity in cart
 else if($action == "update_quantity") {
+    update_product_cart($product_id, $quantity);
     echo "Update product quantity in cart";
+    header("location:./shop_cart.php");
 }
 
 //clear the cart
 else if($action == "empty_cart") {
     clear_cart();
     echo "cart emptied!";
+    header("location:./shop_cart.php");
 }
 
-
+ob_end_flush();
 ?>

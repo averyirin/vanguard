@@ -14,7 +14,7 @@ include "account/login_modal.php";
                     <div class="col-md-5">
                         <ul class="breadcrumb">
                             <li>
-                                <a href="<?php echo $home_path; ?>index.php">Home</a>
+                                <a href="index.php">Home</a>
                             </li>
                             <li>Our team</li>
                         </ul>
@@ -50,7 +50,7 @@ include "account/login_modal.php";
                                     class="img-responsive img-circle center-block" src=
                                     "img/morrice_stand.jpg" width="200px"></a>
                                 </div>
-                                <h3><a href="team=member.html">Irin Avery</a></h3>
+                                <h3><a href="team=member.html">Morrice Pfeiffer</a></h3>
                                 <p class="role">Co-Founder</p>
                                 <div class="social">
                                     <a class="external facebook"

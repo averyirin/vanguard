@@ -1,238 +1,203 @@
-<?php $current_page="cart";
-$home_path="../";
+<?php
+$current_page = "cart";
+include("../util/routing_path.php");
+require_once("../model/database.php");
+require_once("../model/cart.php");
+include("../model/product_db.php");
+include("../view/header.php");
+include("../account/login_modal.php");
+
+session_start();
 ?>
 
-        <!-- NAVIGATION AND LOGIN MODAL-->
-        <?php include("../view/header.php");?>
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Shopping cart</h1>
+            </div>
+            <div class="col-md-6">
+                <ul class="breadcrumb">
+                    <li><a href="<?php echo $home_path; ?>index.php">Home</a>
+                    </li>
+                    <li>Shopping cart</li>
+                </ul>
 
-        <div id="heading-breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Shopping cart</h1>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="breadcrumb">
-                            <li><a href="<?php echo $home_path;?>index.php">Home</a>
-                            </li>
-                            <li>Shopping cart</li>
-                        </ul>
-
-                    </div>
-                </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <div id="content">
-            <div class="container">
+<div id="content">
+    <div class="container">
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-muted lead">You currently have 3 item(s) in your cart.</p>
-                    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted lead">You currently have <?php echo get_num_items(); ?> item(s) in your cart.</p>
+            </div>
 
 
-                    <div class="col-md-9 clearfix" id="basket">
+            <div class="col-md-9 clearfix" id="basket">
 
-                        <div class="box">
+                <div class="box">
 
-                            <form method="post" action="<?php echo $home_path;?>checkout/shop-checkout1.php">
 
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="2">Product</th>
-                                                <th>Quantity</th>
-                                                <th>Unit price</th>
-                                                <th>Discount</th>
-                                                <th colspan="2">Total</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <a href="#">
-                                                        <img src="<?php echo $home_path;?>img/detailsquare.jpg" alt="White Blouse Armani">
-                                                    </a>
-                                                </td>
-                                                <td><a href="#">White Blouse Armani</a>
-                                                </td>
-                                                <td>
-                                                    <input type="number" value="2" class="form-control">
-                                                </td>
-                                                <td>$123.00</td>
-                                                <td>$0.00</td>
-                                                <td>$246.00</td>
-                                                <td><a href="#"><i class="fa fa-trash-o"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#">
-                                                        <img src="<?php echo $home_path;?>img/basketsquare.jpg" alt="Black Blouse Armani">
-                                                    </a>
-                                                </td>
-                                                <td><a href="#">Black Blouse Armani</a>
-                                                </td>
-                                                <td>
-                                                    <input type="number" value="1" class="form-control">
-                                                </td>
-                                                <td>$200.00</td>
-                                                <td>$0.00</td>
-                                                <td>$200.00</td>
-                                                <td><a href="#"><i class="fa fa-trash-o"></i></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th colspan="5">Total</th>
-                                                <th colspan="2">$446.00</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th colspan="2">Product</th>
+                                    <th colspan="2">Quantity</th>
+                                    <th>Unit price</th>
+                                    <th>Discount</th>
+                                    <th colspan="2">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php
+                                if (isset($_SESSION['cart'])) {
 
-                                </div>
-                                <!-- /.table-responsive -->
+                                    $subTotal = 0;
 
-                                <div class="box-footer">
-                                    <div class="pull-left">
-                                        <a href="<?php echo $home_path;?>catalog/products.php" class="btn btn-default"><i class="fa fa-chevron-left"></i> Continue shopping</a>
-                                    </div>
-                                    <div class="pull-right">
-                                         <a href="<?php echo $home_path;?>cart/shop-cart.php" class="btn btn-default"><i class="fa fa-refresh"></i> Update cart</a>
-                                        
-                                        <button type="submit" class="btn btn-template-main">Proceed to checkout <i class="fa fa-chevron-right"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                            </form>
-
-                        </div>
-                        <!-- /.box -->
-
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="box text-uppercase">
-                                    <h3>You may also like these products</h3>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="product">
-                                    <div class="image">
-                                        <a href="<?php echo $home_path;?>shop-detail.php">
-                                            <img src="<?php echo $home_path;?>img/product2.jpg" alt="" class="img-responsive image1">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a href="<?php echo $home_path;?>shop-detail.php">Fur coat</a></h3>
-                                        <p class="price">$143</p>
-
-                                    </div>
-                                </div>
-                                <!-- /.product -->
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="product">
-                                    <div class="image">
-                                        <a href="<?php echo $home_path;?>shop-detail.php">
-                                            <img src="<?php echo $home_path;?>img/product3.jpg" alt="" class="img-responsive image1">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a href="<?php echo $home_path;?>shop-detail.php">Fur coat</a></h3>
-                                        <p class="price">$143</p>
-                                    </div>
-                                </div>
-                                <!-- /.product -->
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="product">
-                                    <div class="image">
-                                        <a href="<?php echo $home_path;?>shop-detail.php">
-                                            <img src="<?php echo $home_path;?>img/product1.jpg" alt="" class="img-responsive image1">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a href="<?php echo $home_path;?>shop-detail.php">Fur coat</a></h3>
-                                        <p class="price">$143</p>
-                                    </div>
-                                </div>
-                                <!-- /.product -->
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- /.col-md-9 -->
-
-                    <div class="col-md-3">
-                        <div class="box" id="order-summary">
-                            <div class="box-header">
-                                <h3>Order summary</h3>
-                            </div>
-                            <p class="text-muted">Shipping and additional costs are calculated based on the values you have entered.</p>
-
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tbody>
+                                    foreach ($_SESSION['cart'] as $product_id => $quantity) {
+                                        $product = get_product($product_id);
+                                        $total = round($product['price'] * $quantity, 2);
+                                        $subTotal += $total; ?>
                                         <tr>
-                                            <td>Order subtotal</td>
-                                            <th>$446.00</th>
+                                            <!-- Product -->
+                                            <td><a href="#">
+                                                    <img
+                                                        src="<?php echo $home_path; ?>img/<?php echo $product['image_source']; ?>"
+                                                        alt="<?php echo $product['name']; ?>">
+                                                </a>
+                                            </td>
+                                            <td><a href="#"><?php echo $product['name']; ?></a></td>
+                                            <!-- Quantity -->
+
+                                            <form action='cart_controller.php' method='post'>
+                                                <td>
+                                                    <input type='hidden' name='product_id'
+                                                           value="<?php echo $product['id']; ?>">
+                                                    <input type='number' name='quantity' class="form-control"
+                                                           value="<?php echo $quantity; ?>">
+                                                </td>
+                                                <td>
+                                                    <input type='hidden' name='action' value='update_quantity'>
+                                                    <button type="submit" class="btn btn-default">
+                                                        <i class="fa fa-refresh"></i> Update
+                                                    </button>
+                                                </td>
+                                            </form>
+
+                                            <!-- Unit Price -->
+                                            <td>$ <?php echo number_format($product['price'], 2); ?></td>
+                                            <!-- Discount -->
+                                            <td>$ 0.00</td>
+
+                                            <!-- Total -->
+                                            <td>$ <?php echo number_format($total, 2); ?></td>
+
+                                            <!-- Remove -->
+                                            <td>
+                                                <form action='cart_controller.php' method='post'>
+                                                    <input type='hidden' name='product_id'
+                                                           value="<?php echo $product['id'] ?>">
+                                                    <input type='hidden' name='action' value='remove_product'>
+                                                    <button type="submit" class="btn btn-danger">
+                                                        <i class="fa fa-trash-o"></i> Remove
+                                                    </button>
+                                                </form>
+                                            </td>
+
+
                                         </tr>
-                                        <tr>
-                                            <td>Shipping and handling</td>
-                                            <th>$10.00</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Tax</td>
-                                            <th>$0.00</th>
-                                        </tr>
-                                        <tr class="total">
-                                            <td>Total</td>
-                                            <th>$456.00</th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                        <?php
+                                    }
+
+                                }
+                                ?>
+
+
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th colspan="6">Total</th>
+                                    <th colspan="2">$ <?php echo number_format($subTotal, 2); ?></th>
+                                </tr>
+                                </tfoot>
+                            </table>
 
                         </div>
+                        <!-- /.table-responsive -->
 
-
-                        <div class="box">
-                            <div class="box-header">
-                                <h4>Coupon code</h4>
+                        <div class="box-footer">
+                            <div class="pull-left">
+                                <a href="<?php echo $home_path; ?>catalog/products.php" class="btn btn-default"><i
+                                        class="fa fa-chevron-left"></i> Continue shopping</a>
                             </div>
-                            <p class="text-muted">If you have a coupon code, please enter it in the box below.</p>
-                            <form>
-                                <div class="input-group">
-
-                                    <input type="text" class="form-control">
-
-                                    <span class="input-group-btn">
-
-					    <button class="btn btn-template-main" type="button"><i class="fa fa-gift"></i></button>
-
-					</span>
-                                </div>
-                                <!-- /input-group -->
-                            </form>
+                            <div class="pull-right">
+                                <form class="form-inline" style="display: inline-block"action='<?php echo $home_path ?>cart/cart_controller.php' method='post'>
+                                    <input type='hidden' name='action' value='empty_cart'>
+                                    <button type="submit" class="btn btn-default" >
+                                        <i class="fa fa-recycle"></i> Clear Cart
+                                    </button>
+                                </form>
+                                <a href="<?php echo $home_path; ?>checkout/delivery_address.php" class="btn  btn-template-main">
+                                    Proceed to checkout <i class="fa fa-chevron-right"></i></a>
+                            </div>
                         </div>
 
+                </div>
+                <!-- /.box -->
+
+
+            </div>
+            <!-- /.col-md-9 -->
+
+            <div class="col-md-3">
+                <div class="box" id="order-summary">
+                    <div class="box-header">
+                        <h3>Order summary</h3>
                     </div>
-                    <!-- /.col-md-3 -->
+                    <p class="text-muted">Shipping and additional costs are calculated based on the values you have
+                        entered.</p>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Order subtotal</td>
+                                <th>$ <?php echo number_format($subTotal, 2); ?></th>
+                            </tr>
+                            <tr>
+                                <td>Shipping and handling</td>
+                                <th>$ <?php  $shipping = 10; echo number_format($shipping, 2); ?> </th>
+                            </tr>
+                            <tr>
+                                <td>Tax (13%)</td>
+                                <th>$ <?php  $tax = $subTotal * 0.13; echo number_format($tax, 2); ?></th>
+                            </tr>
+                            <tr class="total">
+                                <td>Total</td>
+                                <th>$ <?php  $grandTotal = $subTotal + $tax + $shipping; echo number_format($grandTotal, 2); ?></th>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                 </div>
 
+
+
             </div>
-            <!-- /.container -->
+            <!-- /.col-md-3 -->
+
         </div>
-        <!-- /#content -->
-        <!-- *** FOOTER ***
+
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /#content -->
+<!-- *** FOOTER ***
 _________________________________________________________ -->
-        <?php include("../view/footer.php"); ?>
+<?php include("../view/footer.php"); ?>

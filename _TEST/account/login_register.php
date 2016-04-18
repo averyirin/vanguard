@@ -30,7 +30,18 @@ include "./login_modal.php";
                     <!-- Include new account form -->
                     <?php include("new_account.php");?>
                     <!-- Include for already existing user login -->
-                    <?php include("existing_login.php");?>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <h2 class="text-uppercase">Login</h2>
+
+                            <p class="lead">Already our customer?</p>
+                            <p class="text-muted">Please login here</p>
+
+                            <hr>
+                            <?php include("existing_login.php");?>
+
+                        </div>
+                    </div>
 
                 </div>
                 <!-- /.row -->

@@ -1,6 +1,8 @@
 
     <!-- *** LOGIN MODAL ***
-_________________________________________________________ -->
+_______________________________________________________ -->
+
+
     <div aria-hidden="true" aria-labelledby="Login" class="modal fade" id=
     "login-modal" role="dialog" tabindex="-1">
         <div class="modal-dialog modal-sm">
@@ -11,20 +13,8 @@ _________________________________________________________ -->
                     <h4 class="modal-title" id="Login">Customer login</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="<?php echo $home_path;?>account/customer_controller.php" method="post">
-                        <input type="hidden" value="login" name="action">
-                        <div class="form-group">
-                            <input class="form-control" id="email_modal" name="email_account"
-                            placeholder="email" type="text">
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="password_modal" name="password"
-                            placeholder="password" type="password">
-                        </div>
-                        <p class="text-center"><button class=
-                        "btn btn-template-main"><i class="fa fa-sign-in"></i>
-                        Log in</button></p>
-                    </form>
+                    <?php include  "existing_login.php"; ?>
+
                     <p class="text-center text-muted">Not registered yet?</p>
                     <p class="text-center text-muted"><a href=
                     "<?php echo $home_path; ?>account/login_register.php"><strong>Register now</strong></a>!
