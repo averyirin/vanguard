@@ -1,4 +1,4 @@
-<?php $current_page="checkout4";
+<?php $current_page="checkout_review";
 include("../util/routing_path.php");
 require_once ("../model/database.php");
 include ("../model/product_db.php");

@@ -1,4 +1,4 @@
-<?php $current_page="checkout1";
+<?php $current_page="checkout_address";
 include("../util/routing_path.php");
 require_once ("../model/database.php");
 include ("../model/product_db.php");
@@ -33,7 +33,7 @@ include ("../account/login_modal.php");
                     <div class="col-md-9 clearfix" id="checkout">
 
                         <div class="box">
-                            <form method="post" action="shop-checkout2.php">
+                            <form method="post" action="checkout_review.php">
 
                                 <ul class="nav nav-pills nav-justified">
                                     <li class="active"><a href="#"><i class="fa fa-map-marker"></i><br>Address</a>
